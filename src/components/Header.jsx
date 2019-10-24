@@ -30,7 +30,7 @@ const Header = (props) => {
             <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 <NavItem>
-                <NavLink href="/About/">About</NavLink>
+                <NavLink href="/About/">About me</NavLink>
                 </NavItem>
                 <NavItem>
                 <NavLink href="https://github.com/alexbarkin">GitHub</NavLink>
