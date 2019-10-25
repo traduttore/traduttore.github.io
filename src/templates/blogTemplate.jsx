@@ -18,7 +18,7 @@ export default function Template({data,}) {
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: html }}
                 />
-                <Link to='/'>Go to home page.</Link>
+                <Link to='/Blog'>Go to blogs.</Link>
             </article>
         </Layout>
     )
