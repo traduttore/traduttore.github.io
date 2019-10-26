@@ -7,6 +7,20 @@
 module.exports = {
   siteMetadata: {
     title: `Alex's Website`,
+    menuLinks:[
+        {
+          name:'home',
+          link:'/'
+        },
+        {
+          name:'about',
+          link:'/About'
+        },
+        {
+          name:'hello',
+          link:'/blog-posts/hello'
+        }
+      ],
     siteUrl: `localhost:8000`,
     description: `My own personal website, all about me!`,
   },
