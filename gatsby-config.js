@@ -18,7 +18,7 @@ module.exports = {
         },
         {
           name:'hello',
-          link:'/blog/hello'
+          link:'/blog-posts/hello'
         }
       ],
     siteUrl: `localhost:8000`,

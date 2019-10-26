@@ -40,10 +40,10 @@ const Header = (props) => {
                     Blogs
                 </DropdownToggle>
                 <DropdownMenu right>
-                    <DropdownItem tag="a" href="/blog/hello">
+                    <DropdownItem tag="a" href="/blog-posts/hello">
                         hello
                     </DropdownItem>
-                    <DropdownItem tag="a" href="/blog/file-2">
+                    <DropdownItem tag="a" href="/blog-posts/file-2">
                         file-2
                     </DropdownItem>
                     <DropdownItem divider />
