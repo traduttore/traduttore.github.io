@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 import {
     Collapse,
+    Tooltip,
     Navbar,
     NavbarToggler,
     NavbarBrand,
@@ -19,7 +20,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Header = (props) => { 
 
     const [isOpen, setIsOpen] = useState(false);
-
+    const [tooltipOpen, setTooltipOpen] = useState(false);
+    
+    const toggleToolTip = () => setTooltipOpen(!tooltipOpen);
     const toggle = () => setIsOpen(!isOpen);
 
     return (
@@ -47,9 +50,12 @@ const Header = (props) => {
                         file-2
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem>
+                    <DropdownItem id="alert--do-not-click">
                         dont click me
                     </DropdownItem>
+                    <Tooltip placement="right" isOpen={tooltipOpen} target="alert--do-not-click" toggle={toggleToolTip}>
+                        You sure you want to click me?
+                    </Tooltip>
                 </DropdownMenu>
                 </UncontrolledDropdown>
             </Nav>

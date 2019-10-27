@@ -46,7 +46,7 @@ module.exports = {
       options: {
         "fonts": [
           {
-            "family": "Roboto",
+            "family": "Nanum Gothic Coding",
             "variants": [
               "400",
               "400i",

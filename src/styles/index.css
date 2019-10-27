@@ -17,13 +17,3 @@ body {
     align-self: center;
     margin:16px;
 }
-
-.index--launch {
-    padding: 15px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    justify-content: center;
-    align-self: center;
-}
