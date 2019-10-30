@@ -19,7 +19,7 @@ export default () => (
                 a young engineer. </p>
             <p>Now that you're here, take a look around!</p>
             <p>If you see something you like (or something you don't!), lets grab a coffee and chat!</p>
+            <br/>Like what you see? Check out my <Link to='/Resume'>Resume</Link>
         </article>
-        <Link to='/'>Return to Launch screen.</Link>
     </Layout>
 )
