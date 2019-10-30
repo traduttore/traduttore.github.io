@@ -64,6 +64,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: "Alex's Website",
+        short_name: "Alex Barkin",
+        start_url: "/",
+        icon: "static/my-icon.svg"
+      },
+    },
     'gatsby-transformer-sharp',
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
