@@ -70,7 +70,7 @@ module.exports = {
         name: "Alex's Website",
         short_name: "Alex Barkin",
         start_url: "/",
-        icon: "static/my-icon.svg"
+        icon: "static/AB-icon.svg"
       },
     },
     'gatsby-transformer-sharp',
