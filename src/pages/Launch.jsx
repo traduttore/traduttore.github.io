@@ -15,9 +15,9 @@ export default () => (
             <p>My name is Alex Barkin, and im very glad you found my website!</p>
             <p>I enjoy coding, longboarding, and Jeeps. I'm currently a student at the University of Waterloo, and have had three co-op placements.</p>
             <figure className="coop-icons">
-                <img src={waveIcon} alt="Wave Logo" className="coop-icon"/>
-                <img src={waveIcon} alt="Wave Logo" className="coop-icon"/>
                 <img src={dpiIcon} alt="DPI Logo" className="coop-icon"/>
+                <img src={waveIcon} alt="Wave Logo" className="coop-icon"/>
+                <img src={waveIcon} alt="Wave Logo" className="coop-icon"/>
             </figure>
             <br/>Take a look around, and if you like what you see make sure to <Link to='/Contact'>reach out!</Link>
         </article>
