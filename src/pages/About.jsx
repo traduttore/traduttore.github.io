@@ -4,11 +4,11 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/Layout.jsx'
 
-import '../styles/about.css';
+import '../styles/app.css';
 
 export default () => (
     <Layout>
-        <h1 className="about--title">About me</h1>
+        <h1>About me</h1>
         <article className="blog-post-content">
             <p>Hi!</p>
             <p>Im glad you found my website.</p>
@@ -19,7 +19,7 @@ export default () => (
                 a young engineer. </p>
             <p>Now that you're here, take a look around!</p>
             <p>If you see something you like (or something you don't!), lets grab a coffee and chat!</p>
-            <br/>Like what you see? Check out my <Link to='/Resume'>Resume</Link>
+            <br/>Like what you see? Check out my <Link to='/Resume'>Resume.</Link>
         </article>
     </Layout>
 )
