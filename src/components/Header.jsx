@@ -47,18 +47,21 @@ class Header extends React.Component {
         return (
             <nav>
                 <Navbar color="dark" dark expand="md">
-                <NavbarBrand href="/">Alex Barkin</NavbarBrand>
+                <NavbarBrand href="/Contact/">Alex Barkin</NavbarBrand>
                 <NavbarToggler onClick={this.dropDownToggle} />
                 <Collapse isOpen={this.state.dropDownIsOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                    <NavLink href="/About/">About me</NavLink>
+                        <NavLink href="/Launch/">Home</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="/Resume/">Resume</NavLink>
+                        <NavLink href="/About/">About</NavLink>
                     </NavItem>
                     <NavItem>
-                    <NavLink href="https://github.com/alexbarkin">GitHub</NavLink>
+                        <NavLink href="/Resume/">Resume</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="https://github.com/alexbarkin">GitHub</NavLink>
                     </NavItem>
                     <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>

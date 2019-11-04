@@ -1,10 +1,10 @@
 h1 {
-    color: #FF12FF; 
+    color: rgb(117, 117, 117);
     font-family: 'Roboto Mono', monospace;
 }
 
 h2 {
-    color: #FF1234; 
+    color: rgb(150, 150, 150);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -48,6 +48,8 @@ footer, body, .container--main {
 .blog-post-content, .container--address {
     color: #FFFFFF;
     font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
 }
 
 .instagram {
@@ -76,6 +78,16 @@ footer, body, .container--main {
     max-height: 100px;
     border-radius: 50%;
     padding: 10px;
+}
+
+.coop-icon{
+    max-width: 50px;
+    max-height: 50px;
+    padding: 10px;
+}
+
+.coop-icons{
+    align-self: center;
 }
 
 .resume{

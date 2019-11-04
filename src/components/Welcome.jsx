@@ -85,15 +85,39 @@ class Welcome extends React.Component {
         }
         else{
             for (let counter = 0; counter < numCubes; counter++){
+                if (yloc[counter] > default_y_pos[counter]){
+                    isUp[counter] = true; 
+                }
+                if(yloc[counter] < default_y_pos[counter]){
+                    isUp[counter] = false; 
+                }
+                if (xloc[counter] > default_x_pos[counter]){
+                    isLeft[counter] = true; 
+                }
+                if(xloc[counter] < default_x_pos[counter]){
+                    isLeft[counter] = false; 
+                }
+                if(Math.abs(yloc[counter]-default_y_pos[counter]) > 5*speed[counter]){
+                    yloc[counter] = yloc[counter] + (isUp[counter]? -5*speed[counter] : 5*speed[counter]);
+                }
+                else{
+                    yloc[counter] = default_y_pos[counter];
+                }
+                if(Math.abs(xloc[counter]-default_x_pos[counter]) > 5*speed[counter]){
+                    xloc[counter] = xloc[counter] + (isLeft[counter]? -5*speed[counter] : 5*speed[counter]);
+                }
+                else{
+                    xloc[counter] = default_x_pos[counter];
+                }
                 let ctxCol = this.state.ctx
-                
                 ctxCol.fillStyle = this.colour[counter];
                 this.setState({
                     ctx: ctxCol,
                 });
 
-                this.state.ctx.fillRect(default_x_pos[counter], default_y_pos[counter], letter_width, letter_width);
-                
+                this.state.ctx.fillRect(xloc[counter], yloc[counter], letter_width, letter_width); 
+
+                ctxCol = this.state.ctx
                 ctxCol.fillStyle = "#212424";
                 ctxCol.font="20px Roboto Mono monospace";
                 ctxCol.textAlign="center";
@@ -102,8 +126,16 @@ class Welcome extends React.Component {
                     ctx: ctxCol,
                 });
 
-                this.state.ctx.fillText(welcomeMessage[counter], default_x_pos[counter]+letter_width/2, default_y_pos[counter]+letter_width/2)
+                this.state.ctx.fillText(welcomeMessage[counter], xloc[counter]+letter_width/2, yloc[counter]+letter_width/2)
+                this.setState({
+                    y: yloc, 
+                    x: xloc,
+                });
             }
+            this.setState({
+                is_left: isLeft,
+                is_up: isUp,
+            });
         }
     }
 
@@ -129,7 +161,7 @@ class Welcome extends React.Component {
         }
 
         for (let count = 0; count < numCubes; count++){
-            speed[count] = Math.random()*4;
+            speed[count] = Math.random()*3+1;
             INIT_X[count] = Math.random()*ctx.canvas.width;
             INIT_Y[count] = Math.random()*ctx.canvas.height;
             INIT_IS_LEFT[count] = Boolean(Math.random()>0.5);
@@ -160,7 +192,7 @@ class Welcome extends React.Component {
         <figure className = "container--graphics">
             <canvas className ="canvas" ref={this.canvasRef} />
             <div className="verticalContainer">
-            <a className="launch" href="/About" 
+            <a className="launch" href="/Launch" 
             onMouseEnter={this.handleHover.bind(this)}
             onMouseLeave={this.handleleaveHover.bind(this)}>
                 Launch
