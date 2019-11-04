@@ -48,8 +48,6 @@ footer, body, .container--main {
 .blog-post-content, .container--address {
     color: #FFFFFF;
     font-family: 'Space Mono', monospace;
-    display: flex;
-    flex-direction: column;
 }
 
 .instagram {
