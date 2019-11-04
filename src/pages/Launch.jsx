@@ -13,7 +13,7 @@ export default () => (
         <h1>Welcome to my homepage!</h1>
         <article className="blog-post-content">
             <p>My name is Alex Barkin, and im very glad you found my website!</p>
-            <p>I'm a student at the University of Waterloo, and have had three co-op placements. I enjoy coding, longboarding, and Jeeps.</p>
+            <p>I enjoy coding, longboarding, and Jeeps. I'm currently a student at the University of Waterloo, and have had three co-op placements.</p>
             <figure className="coop-icons">
                 <img src={waveIcon} alt="Wave Logo" className="coop-icon"/>
                 <img src={waveIcon} alt="Wave Logo" className="coop-icon"/>
