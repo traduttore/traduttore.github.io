@@ -11,7 +11,6 @@ export default () => (
         <h1>About me</h1>
         <article className="blog-post-content">
             <p>Hi!</p>
-            <p>Im glad you found my website.</p>
             <p>My name is Alex, and I'm currently studying Mechatronics at the University of Waterloo. 
                 I am going into my third year of studies and have had 3 co-ops ranging from mechanical design to 
                 software design. I enjoy travelling the world with my friends & family and discovering new 
