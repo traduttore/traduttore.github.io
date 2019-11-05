@@ -192,7 +192,7 @@ class Welcome extends React.Component {
         <figure className = "container--graphics">
             <canvas className ="canvas" ref={this.canvasRef} />
             <div className="verticalContainer">
-            <a className="launch" href="/Launch" 
+            <a className="launch" href="/Home/" 
             onMouseEnter={this.handleHover.bind(this)}
             onMouseLeave={this.handleleaveHover.bind(this)}>
                 Launch
