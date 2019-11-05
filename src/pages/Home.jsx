@@ -14,23 +14,65 @@ class Home extends React.Component {
         coopOneIsOpen:false,
         coopTwoIsOpen:false,
         coopThreeIsOpen:false,
+        hoverCoopOne:false,
+        hoverCoopTwo:false,
+        hoverCoopThree:false,
     }
 
     toggleCoopOne = () => this.setState({
             coopOneIsOpen:!this.state.coopOneIsOpen,
             coopTwoIsOpen:false,
             coopThreeIsOpen:false,
+            hoverCoopOne:false,
         });
     toggleCoopTwo = () => this.setState({
         coopTwoIsOpen:!this.state.coopTwoIsOpen,
         coopOneIsOpen:false,
         coopThreeIsOpen:false,
+        hoverCoopTwo:false,
     });
     toggleCoopThree = () => this.setState({
         coopThreeIsOpen:!this.state.coopThreeIsOpen,
         coopTwoIsOpen:false,
         coopOneIsOpen:false,
+        hoverCoopThree:false,
     });
+
+    handleCoopOneHover(){
+        if (this.state.hoverCoopOne === false){
+            this.setState({hoverCoopOne: true})
+        }
+    }
+
+    handleLeaveCoopOneHover(){
+        if (this.state.hoverCoopOne === true){
+            this.setState({hoverCoopOne: false})
+        }
+    }
+
+    handleCoopTwoHover(){
+        if (this.state.hoverCoopTwo === false){
+            this.setState({hoverCoopTwo: true})
+        }
+    }
+
+    handleLeaveCoopTwoHover(){
+        if (this.state.hoverCoopTwo === true){
+            this.setState({hoverCoopTwo: false})
+        }
+    }
+
+    handleCoopThreeHover(){
+        if (this.state.hoverCoopThree === false){
+            this.setState({hoverCoopThree: true})
+        }
+    }
+
+    handleLeaveCoopThreeHover(){
+        if (this.state.hoverCoopThree === true){
+            this.setState({hoverCoopThree: false})
+        }
+    }
 
     render() {
         return(
@@ -41,9 +83,12 @@ class Home extends React.Component {
                     <p>My name is Alex Barkin, and im very glad you found my website!</p>
                     <p>I'm currently a member of the Mechatronics class of 2022 at the University of Waterloo. I am going into my third year of studies and have had 3 co-ops ranging from mechanical design to software design.</p>
                     <figure className="coop-icons">
-                        <input type="image" src={dpiIcon} alt="DPI Logo" className="coop-icon" id="coop-1" onClick={this.toggleCoopOne}/>
-                        <input type="image" src={waveIcon} alt="Wave Logo" className="coop-icon" id="coop-2" onClick={this.toggleCoopTwo}/>
-                        <input type="image" src={waveIcon} alt="Wave Logo" className="coop-icon" id="coop-3" onClick={this.toggleCoopThree}/>
+                        <input type="image" src={dpiIcon} alt="DPI Logo" className="coop-icon" id="coop-1" onClick={this.toggleCoopOne}
+                        onMouseEnter={this.handleCoopOneHover.bind(this)} onMouseLeave={this.handleLeaveCoopOneHover.bind(this)}/>
+                        <input type="image" src={waveIcon} alt="Wave Logo" className="coop-icon" id="coop-2" onClick={this.toggleCoopTwo}
+                        onMouseEnter={this.handleCoopTwoHover.bind(this)} onMouseLeave={this.handleLeaveCoopTwoHover.bind(this)}/>
+                        <input type="image" src={waveIcon} alt="Wave Logo" className="coop-icon" id="coop-3" onClick={this.toggleCoopThree}
+                        onMouseEnter={this.handleCoopThreeHover.bind(this)} onMouseLeave={this.handleLeaveCoopThreeHover.bind(this)}/>
                     </figure>
                     <Collapse isOpen={this.state.coopOneIsOpen}>
                             <Card className="coop--card">
@@ -75,15 +120,15 @@ class Home extends React.Component {
                                 </CardBody>
                             </Card>
                     </Collapse>
-                    <UncontrolledPopover trigger="hover" placement="bottom" target="coop-1">
+                    <UncontrolledPopover isOpen={this.state.hoverCoopOne} placement="bottom" target="coop-1">
                         <PopoverHeader>Design Plastics International</PopoverHeader>
                         <PopoverBody>My first coop was at Design Plastics Internation from May-Aug of 2018. Click the logo to learn more.</PopoverBody>
                     </UncontrolledPopover>
-                    <UncontrolledPopover trigger="hover" placement="bottom" target="coop-2">
+                    <UncontrolledPopover isOpen={this.state.hoverCoopTwo} placement="bottom" target="coop-2">
                         <PopoverHeader>Wave HQ - Machine Learning</PopoverHeader>
                         <PopoverBody>My second coop was at Wave HQ from Jan-Apr of 2019. Click the logo to learn more.</PopoverBody>
                     </UncontrolledPopover>
-                    <UncontrolledPopover trigger="hover" placement="bottom" target="coop-3">
+                    <UncontrolledPopover isOpen={this.state.hoverCoopThree} placement="bottom" target="coop-3">
                         <PopoverHeader>Wave HQ - Accounting Platform</PopoverHeader>
                         <PopoverBody>My third coop was at Wave HQ from Sept-Dec of 2019. Click the logo to learn more.</PopoverBody>
                     </UncontrolledPopover>
