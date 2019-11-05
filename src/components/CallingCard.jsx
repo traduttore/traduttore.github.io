@@ -14,7 +14,7 @@ const Callingcard = props => (
                     Email: <a href="mailto:alex.barkin@edu.uwaterloo.ca">alex.barkin@edu.uwaterloo.ca</a><br/>
             </p>
         </address>
-        <iframe src="https://snapwidget.com/embed/751863" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" className="instagram" title="instagram"></iframe>
+        <iframe src="https://snapwidget.com/embed/751863" allowtransparency="true" frameBorder="0" scrolling="no" className="instagram" title="instagram"></iframe>
     </div>
 )
 

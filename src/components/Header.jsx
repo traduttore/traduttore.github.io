@@ -47,12 +47,12 @@ class Header extends React.Component {
         return (
             <nav>
                 <Navbar color="dark" dark expand="md">
-                <NavbarBrand href="/Contact/">Alex Barkin</NavbarBrand>
+                <NavbarBrand href="/">Alex Barkin</NavbarBrand>
                 <NavbarToggler onClick={this.dropDownToggle} />
                 <Collapse isOpen={this.state.dropDownIsOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink href="/Launch/">Home</NavLink>
+                        <NavLink href="/Home/">Home</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href="/About/">About</NavLink>
@@ -81,7 +81,7 @@ class Header extends React.Component {
                         <Tooltip placement="right" isOpen={this.state.toolTipIsOpen} target="alert--do-not-click" toggle={this.toolTipToggle}>
                             You sure you want to click me?
                         </Tooltip>
-                        <Modal isOpen={this.state.modalIsOpen} toggle={this.modalToggle} keyboard="false" backdrop="static">
+                        <Modal isOpen={this.state.modalIsOpen} toggle={this.modalToggle} keyboard={false} backdrop="static">
                             <ModalBody className="modal-main">
                                 <h4>Loading...</h4>
                                 <Progress animated color="info" value={this.state.loadingPercent} />
