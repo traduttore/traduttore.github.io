@@ -29,7 +29,7 @@ class Header extends React.Component {
     }
 
     modalToggle = () => this.setState({modalIsOpen:!this.state.modalIsOpen, toolTipIsOpen: false});
-    toolTipToggle = () => this.setState({toolTipIsOpen:!this.state.toolTipIsOpen});
+    toolTipToggle = () => {if (!this.state.modalIsOpen){this.setState({toolTipIsOpen:!this.state.toolTipIsOpen});}}
     dropDownToggle = () => this.setState({dropDownIsOpen:!this.state.dropDownIsOpen});
 
     updatePercent = () => {
