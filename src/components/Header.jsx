@@ -28,7 +28,7 @@ class Header extends React.Component {
         loadingPercent: 0,
     }
 
-    modalToggle = () => this.setState({modalIsOpen:!this.state.modalIsOpen});
+    modalToggle = () => this.setState({modalIsOpen:!this.state.modalIsOpen, toolTipIsOpen: false});
     toolTipToggle = () => this.setState({toolTipIsOpen:!this.state.toolTipIsOpen});
     dropDownToggle = () => this.setState({dropDownIsOpen:!this.state.dropDownIsOpen});
 
@@ -75,10 +75,10 @@ class Header extends React.Component {
                             file-2
                         </DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem id="alert--do-not-click" onClick={this.modalToggle} onMouseEnter={this.toolTipToggle} onMouseLeave={this.toolTipToggle}>
+                        <DropdownItem id="alert--do-not-click" onClick={this.modalToggle}>
                             dont click me
                         </DropdownItem>
-                        <Tooltip placement="right" target="alert--do-not-click" isOpen={this.state.toolTipIsOpen} toggle={this.toolTipToggle}>
+                        <Tooltip placement="right" isOpen={this.state.toolTipIsOpen} target="alert--do-not-click" toggle={this.toolTipToggle}>
                             You sure you want to click me?
                         </Tooltip>
                         <Modal isOpen={this.state.modalIsOpen} toggle={this.modalToggle} keyboard={false} backdrop="static">
