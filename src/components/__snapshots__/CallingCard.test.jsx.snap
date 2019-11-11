@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container--address"
+>
+  <address
+    className="container--address-me"
+  >
+    <img
+      alt="headshot"
+      className="headshot"
+      src="test-file-stub"
+    />
+    <p
+      className="container--address-text"
+    >
+      Alex Barkin
+      <br />
+      Linkedin: 
+      <a
+        href="https://www.linkedin.com/in/abarkin/"
+      >
+        abarkin
+      </a>
+      <br />
+      Github: 
+      <a
+        href="https://github.com/alexbarkin"
+      >
+        alexbarkin
+      </a>
+      <br />
+      Email: 
+      <a
+        href="mailto:alex.barkin@edu.uwaterloo.ca"
+      >
+        alex.barkin@edu.uwaterloo.ca
+      </a>
+      <br />
+    </p>
+  </address>
+  <iframe
+    allowtransparency="true"
+    className="instagram"
+    frameBorder="0"
+    scrolling="no"
+    src="https://snapwidget.com/embed/751863"
+    title="instagram"
+  />
+</div>
+`;

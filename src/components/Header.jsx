@@ -75,10 +75,10 @@ class Header extends React.Component {
                             file-2
                         </DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem id="alert--do-not-click" onClick={this.modalToggle}>
+                        <DropdownItem id="alert--do-not-click" onClick={this.modalToggle} onMouseEnter={this.toolTipToggle} onMouseLeave={this.toolTipToggle}>
                             dont click me
                         </DropdownItem>
-                        <Tooltip placement="right" isOpen={this.state.toolTipIsOpen} target="alert--do-not-click" toggle={this.toolTipToggle}>
+                        <Tooltip placement="right" target="alert--do-not-click" isOpen={this.state.toolTipIsOpen} toggle={this.toolTipToggle}>
                             You sure you want to click me?
                         </Tooltip>
                         <Modal isOpen={this.state.modalIsOpen} toggle={this.modalToggle} keyboard={false} backdrop="static">

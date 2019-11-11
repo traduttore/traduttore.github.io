@@ -1,31 +1,25 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
-    <defs>
-        <style>
-            .cls-1{fill:#c12026;}.cls-2{fill:#ed2124;}.cls-3{fill:#7ac1ea;}.cls-4,.cls-6{fill:#ef3d45;}.cls-11,.cls-5,.cls-6,.cls-7,.cls-8{font-size:40.78px;}.cls-11,.cls-5,.cls-7,.cls-8{fill:#fff;}.cls-5{font-family:HelveticaNeue, Helvetica Neue;}.cls-11,.cls-6{font-family:Courier, Courier;}.cls-7{font-family:Wingdings-Regular, Wingdings;}.cls-8{font-family:MyriadPro-Regular, Myriad Pro;}.cls-9{fill:#184987;}.cls-10{fill:#257cbe;}
-        </style>
-    </defs>
-    <title>AB Logos</title>
-    <rect class="cls-1" x="147.93" y="20.18" width="73.07" height="73.07"/>
-    <rect class="cls-2" x="58.96" y="101.23" width="73.07" height="73.07"/>
-    <rect class="cls-3" x="234.73" y="19.19" width="73.07" height="73.07"/>
-    <rect class="cls-4" x="234.73" y="100.3" width="73.07" height="73.07"/>
-    <rect class="cls-9" x="58.96" y="181.41" width="73.07" height="73.07"/>
-    <rect class="cls-10" x="58.96" y="21.04" width="73.07" height="73.07"/>
-    <rect class="cls-3" x="234.73" y="181.41" width="73.07" height="73.07"/>
-    <rect class="cls-1" x="147.45" y="180.98" width="73.07" height="73.07"/>
-    <rect class="cls-9" x="234.73" y="266.81" width="73.07" height="73.07"/>
-    <rect class="cls-10" x="62.06" y="265.89" width="73.07" height="73.07"/>
-    <path class="cls-10" d="M307.51,266.81H235v73.08"/>
-    <text class="cls-5" transform="translate(231.63 94.11)">AB</text>
-    <text class="cls-6" transform="translate(149.09 93.25)">AB</text>
-    <text class="cls-7" transform="translate(69.34 152.81)">AB</text>
-    <text class="cls-8" transform="translate(253.39 174.43)">AB</text>
-    <text class="cls-7" transform="translate(68.15 232.67)">AB</text>
-    <text class="cls-7" transform="translate(67.62 72.3)">AB</text>
-    <text class="cls-7" transform="translate(243.56 232.67)">AB</text>
-    <text class="cls-11" transform="translate(146.71 94.11)">AB</text>
-    <text class="cls-11" transform="translate(150.27 252.76)">AB</text>
-    <text class="cls-6" transform="translate(147.9 253.62)">AB</text>
-    <text class="cls-7" transform="translate(243.93 318.24)">AB</text>
-    <text class="cls-5" transform="translate(58.96 340.81)">AB</text>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280 280" style="enable-background:new 0 0 280 280;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C12026;}
+	.st1{fill:#ED2124;}
+	.st2{fill:#7AC1EA;}
+	.st3{fill:#EF3D45;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#184987;}
+	.st6{fill:#257CBE;}
+	.st7{fill:#184987;stroke:#277CBD;stroke-width:8;stroke-miterlimit:10;}
+	.st8{font-family:'Courier';}
+	.st9{font-size:149.4634px;}
+	.st10{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<circle class="st7" cx="140.5" cy="139.9" r="134.5"/>
+<text transform="matrix(1 0 0 1 56.4007 157.2342)" class="st2 st8 st9">A</text>
+<text transform="matrix(1 0 0 1 131.8358 221.8386)" class="st2 st8 st9">B</text>
+<circle class="st10" cx="140.9" cy="139.2" r="130.1"/>
+<line class="st11" x1="89.7" y1="81" x2="65.3" y2="147.2"/>
+<line class="st11" x1="148.8" y1="145.8" x2="148.6" y2="211.7"/>
 </svg>
