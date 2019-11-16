@@ -94,7 +94,7 @@ jobs:
 workflows:
   build_test_lint:
     jobs:
-      - build:
+      - build
       - test:
           requires:
             - build
