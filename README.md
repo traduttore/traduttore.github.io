@@ -6,7 +6,7 @@
 <h1 align="center">
   Alex Barkin's Personal Website
 </h1>
-
+[![CircleCI](https://circleci.com/gh/alexbarkin/alexbarkin.github.io/tree/Gatsby-Dev.svg?style=svg)](https://circleci.com/gh/alexbarkin/alexbarkin.github.io/tree/Gatsby-Dev) [![codecov](https://codecov.io/gh/alexbarkin/alexbarkin.github.io/branch/Gatsby-Dev/graph/badge.svg)](https://codecov.io/gh/alexbarkin/alexbarkin.github.io)
 Welcome to the code base for alexbarkin.github.io!
 If you've made it this far, then you're either interested in my development skills, or a really good stalker...
 This website was a fun project I started in September of 2019, and it's always being updated.
