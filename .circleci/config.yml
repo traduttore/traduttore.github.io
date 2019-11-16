@@ -102,9 +102,7 @@ workflows:
       - test:
           requires:
             - build
-      - lint:
-          requires:
-            - test
+      - lint
       - coverage:
           requires:
             - test
