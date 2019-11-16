@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Calling Card renders correctly 1`] = `
 <div
   className="container--address"
 >
@@ -31,7 +31,8 @@ exports[`renders correctly 1`] = `
         alexbarkin
       </a>
       <br />
-      Email: 
+      Email:
+       
       <a
         href="mailto:alex.barkin@edu.uwaterloo.ca"
       >

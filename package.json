@@ -12,7 +12,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "test": "jest src"
+    "test": "jest src",
+    "lint": "prettier --check \"**/*.{js,jsx,json,md}\"",
+    "coverage": "jest src --coverage"
   },
   "dependencies": {
     "babel-jest": "^24.9.0",
@@ -24,6 +26,7 @@
     "gatsby": "^2.17.2",
     "gatsby-image": "^2.2.27",
     "gatsby-plugin-manifest": "^2.2.26",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.32",
     "gatsby-source-filesystem": "^2.1.33",
