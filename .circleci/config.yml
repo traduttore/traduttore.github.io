@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
 jobs:
   build:
     docker:
@@ -53,7 +55,9 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
       # run tests!
-      - run: yarn test
+      - run: yarn test --coverage
+      - store_artifacts:
+          path: coverage
 
   lint:
     docker:
@@ -87,9 +91,9 @@ jobs:
 
     steps:
       - checkout
-      - run: yarn coverage
       - run: export CODECOV_TOKEN="0b812dbb-13ee-411c-acd0-3da61fc18e99"
-      - run: bash <(curl -s https://codecov.io/bash)
+      - codecov/upload:
+          file: coverage
 
 workflows:
   build_test_lint:
