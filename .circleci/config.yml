@@ -57,8 +57,8 @@ jobs:
       # run tests!
       - run: yarn test --coverage --coverageDirectory=coverage
 
-      - run: export CODECOV_TOKEN="0b812dbb-13ee-411c-acd0-3da61fc18e99"
       - codecov/upload:
+          token: "0b812dbb-13ee-411c-acd0-3da61fc18e99"
           file: ~/repo/coverage/clover.xml
 
   lint:
