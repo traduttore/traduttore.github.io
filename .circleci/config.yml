@@ -55,13 +55,11 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
       # run tests!
-      - run: yarn test --coverage --coverageDirectory=../coverage
-      - store_artifacts:
-          path: coverage
+      - run: yarn test --coverage --coverageDirectory=coverage
 
       - run: export CODECOV_TOKEN="0b812dbb-13ee-411c-acd0-3da61fc18e99"
       - codecov/upload:
-          file: ~/coverage
+          file: coverage
 
   lint:
     docker:
