@@ -87,13 +87,20 @@ jobs:
 
     steps:
       - checkout
+      - run: yarn coverage
       - run: export CODECOV_TOKEN="0b812dbb-13ee-411c-acd0-3da61fc18e99"
       - run: bash <(curl -s https://codecov.io/bash)
 
 workflows:
   build_test_lint:
     jobs:
-      - build
-      - test
-      - lint
-      - coverage
+      - build:
+      - test:
+          requires:
+            - build
+      - lint:
+          requires:
+            - test
+      - coverage:
+          requires:
+            - test

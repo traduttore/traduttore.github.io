@@ -31,7 +31,8 @@ exports[`Calling Card renders correctly 1`] = `
         alexbarkin
       </a>
       <br />
-      Email: 
+      Email:
+       
       <a
         href="mailto:alex.barkin@edu.uwaterloo.ca"
       >
