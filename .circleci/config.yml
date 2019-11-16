@@ -78,3 +78,10 @@ jobs:
 
       # check linter!
       - run: yarn lint
+
+workflows:
+  build_test_lint:
+    jobs:
+      - build
+      - test
+      - lint
