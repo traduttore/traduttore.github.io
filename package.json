@@ -12,7 +12,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "test": "jest src"
+    "test": "jest src",
+    "lint": "prettier --check \"**/*.{js,jsx,json,md}\""
   },
   "dependencies": {
     "babel-jest": "^24.9.0",

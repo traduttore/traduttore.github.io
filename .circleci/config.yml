@@ -1,12 +1,7 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2.1
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/node:12.13.0
 
       # Specify service dependencies here if necessary
@@ -33,5 +28,53 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
+      # build site!
+      - run: yarn build
+
+  test:
+    docker:
+      - image: circleci/node:12.13.0
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+
+      - run: yarn install --frozen-lockfile
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+
       # run tests!
       - run: yarn test
+
+  lint:
+    docker:
+      - image: circleci/node:12.13.0
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+
+      - run: yarn install --frozen-lockfile
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+
+      # check linter!
+      - run: yarn lint
