@@ -55,7 +55,7 @@ jobs:
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
       # run tests!
-      - run: yarn test --coverage
+      - run: yarn test --coverage --coverageDirectory=./coverage
       - store_artifacts:
           path: coverage
 
