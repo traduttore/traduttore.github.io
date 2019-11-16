@@ -93,7 +93,7 @@ jobs:
       - checkout
       - run: export CODECOV_TOKEN="0b812dbb-13ee-411c-acd0-3da61fc18e99"
       - codecov/upload:
-          file: coverage
+          file: ~/repo/coverage
 
 workflows:
   build_test_lint:
