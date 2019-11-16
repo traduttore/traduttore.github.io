@@ -28,8 +28,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
-      - run: yarn global add gatsby-dev-cli
-
       # build site!
       - run: yarn build
 
