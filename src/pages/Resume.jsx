@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/Layout.jsx"
 
-import resumePdf from "../images/resume.pdf"
+import resumePdf from "../images/Resume.pdf"
 import "../styles/app.css"
 
 export default () => (
