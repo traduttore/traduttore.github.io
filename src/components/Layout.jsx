@@ -16,7 +16,11 @@ export default ({ noBorder, children }) => (
       ]}
     ></Helmet>
     <Header />
-    <main className={noBorder? "container--main--no-border": "container--main"}>{children}</main>
+    <main
+      className={noBorder ? "container--main--no-border" : "container--main"}
+    >
+      {children}
+    </main>
     <footer>
       <CallingCard />
     </footer>
