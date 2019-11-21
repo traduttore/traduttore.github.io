@@ -8,6 +8,10 @@ h2 {
     font-family: 'Roboto Mono', monospace;
 }
 
+a{
+    color: #17a2b8;
+}
+
 footer, body, .container--main {
     background-color: #212424;
 }
@@ -45,9 +49,13 @@ footer, body, .container--main {
     font-weight: lighter;
 }
 
-.blog-post-content, .container--address {
+.blog-post-content, .blog-post-content--border, .container--address {
     color: #FFFFFF;
     font-family: 'Space Mono', monospace;
+}
+
+.blog-post-content--border {
+    padding: 2%;
 }
 
 .instagram {
@@ -101,3 +109,48 @@ footer, body, .container--main {
     height: 129vw;
 }
 
+.slider {
+    width: 100vw;
+    align-self: center;
+}
+
+.container--main--no-border {
+    padding: 0;
+}
+
+.button--scroll {
+    background: rgba(108,117,125,0);
+    border: transparent; 
+    color: #21252900;
+    width: 100vw;
+    animation: fadeInOut 10s;
+}
+
+.flexContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+@keyframes fadeInOut {
+        0% {
+        background: rgba(108,117,125,0);
+        color: #21252900;
+      }
+    
+      50% {
+        background: rgba(108,117,125,0.5);
+        color: #212529;
+      }
+
+      100% {
+        background: rgba(108,117,125,0);
+        color: #21252900;
+      }
+}
+
+.button--scroll:hover, .button--scroll:active {
+    background: rgba(108,117,125,0.5);
+    border: transparent; 
+    color: #212529;
+    width: 100vw;
+}

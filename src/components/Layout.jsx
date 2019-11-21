@@ -6,7 +6,7 @@ import CallingCard from "./CallingCard.jsx"
 
 import "../styles/app.css"
 
-export default ({ children }) => (
+export default ({ noBorder, children }) => (
   <React.Fragment>
     <Helmet
       title={"Alex's Website"}
@@ -16,7 +16,7 @@ export default ({ children }) => (
       ]}
     ></Helmet>
     <Header />
-    <main className="container--main">{children}</main>
+    <main className={noBorder? "container--main--no-border": "container--main"}>{children}</main>
     <footer>
       <CallingCard />
     </footer>

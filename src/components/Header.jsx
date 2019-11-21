@@ -72,6 +72,9 @@ class Header extends React.Component {
                 <NavLink href="/Resume/">Resume</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="/Jeep/">Jeep</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="https://github.com/alexbarkin">GitHub</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
@@ -79,11 +82,11 @@ class Header extends React.Component {
                   Blogs
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem tag="a" href="/blog-posts/hello">
-                    hello
+                  <DropdownItem tag="a" href="/blog-posts/Wave1">
+                    Wave Coop #1
                   </DropdownItem>
-                  <DropdownItem tag="a" href="/blog-posts/file-2">
-                    file-2
+                  <DropdownItem tag="a" href="/blog-posts/Wave2">
+                    Wave Coop #2
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem

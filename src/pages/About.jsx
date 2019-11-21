@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout.jsx"
 
 import "../styles/app.css"
-import { comment } from "postcss"
 
 export default () => (
   <Layout>
@@ -16,11 +15,15 @@ export default () => (
         This lead to my decision to join Claude Watson School for the Arts (CWSA) in grade 4. 
         After graduating from CWSA, I decided to attend the Math and Computer Science (MACS) program at William Lyon Mackenzie CI (WLMCI? too many acronyms). 
         I really enjoyed the arts, but I also realised that it wasn't what I wanted to do with the rest of my life. 
+        </p>
+        <p>
         In grade 9, I took my first coding class. 
         This was a pivotal moment, as it exposed me to what would be my new passion. 
         I loved coding because it allows me to work with complex technical problems, as well as add creativity in the work which I produce.
         Throughout highschool I took part in many tech related extra-curriculars, such as my highschool's compotetive coding team, as well as some artistic extra-curriculars like my school's play Grease!
         I loved being able to do both, Artistic and technical.
+        </p>
+        <p>
         That's when I heard about the University of Waterloo's Mechatronics Engineering program.
         It wasnt necessarily artistic, but it was a diverse discipline which would allow me to combine multiple passions of mine.
         The mechanical design and visual coding aspects are more artistic, while the electrical engineering and programming allow me to explore complex technical challenges.
@@ -36,12 +39,14 @@ export default () => (
           I decdided it would be very cool if I was able to decorate premade clothing with my own designs.
           So I set out to learn how, with the help of my mother, and Youtube, I completed a simple flower design on a denim shirt!
           Pictures can be found in my Gallery! <comment> add Gallery Page </comment>
+          </p>
+          <p>
           And finally I get to talk about my Jeep.
           Ever since I was a wee lad, I've always aspired to own a Jeep Wrangler.
           I think I was really sold on the idea after watching Dawson get one on Dawson's Creek.
           Last year I made that dream a reality, and purchased my baby (Blueberry Beast).
           I enjoy taking the roof off, and sometimes even the doors, and just spending time with my friends and family while driving!
-          Im sure you want to see more, so I've made a page dedicated to stories and pictures with my Jeep! <comment> add Jeep Page </comment>
+          Im sure you want to see more, so I've made a <Link to="/Jeep">Jeep page</Link> dedicated to stories and pictures with my Jeep!
         </p>
     </article>
   </Layout>
