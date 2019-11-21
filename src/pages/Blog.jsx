@@ -10,9 +10,9 @@ export default () => (
   <Layout>
     <h1>Blogs</h1>
     <nav>
-      <a href="/blog-posts/hello">hello blog</a>
+      <a href="/blog-posts/Wave1">Wave Coop #1</a>
       <br />
-      <a href="/blog-posts/file-2">another blog</a>
+      <a href="/blog-posts/Wave2">Wave Coop #2</a>
     </nav>
     <Link to="/About">Learn more about me!</Link>
   </Layout>

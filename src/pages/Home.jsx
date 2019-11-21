@@ -212,7 +212,9 @@ class Home extends React.Component {
             coffee and <Link to="/Contact">chat!</Link>
           </p>
           <br />
-          Like what you see? Check out my <Link to="/Resume">Resume.</Link>
+          Like what you see? Check out my <Link to="/About">
+            about page
+          </Link> or <Link to="/Resume">Resume.</Link>
         </article>
       </Layout>
     )

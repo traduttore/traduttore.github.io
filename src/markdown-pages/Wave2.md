@@ -1,7 +1,7 @@
 ---
-path: "/blog-posts/hello"
+path: "/blog-posts/Wave2"
 date: "2019-10-20"
-title: "My first blog post"
+title: "My second coop at WaveHq"
 ---
 
 Content time...
