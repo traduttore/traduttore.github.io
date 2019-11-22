@@ -89,9 +89,10 @@ workflows:
   build_test_lint:
     jobs:
       - build:
-          branches:
-            ignore:
-              - master
+          filters:
+            branches:
+              ignore:
+                - master
       - test:
           requires:
             - build
