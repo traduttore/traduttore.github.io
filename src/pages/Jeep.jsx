@@ -71,7 +71,7 @@ export default () => {
           Blueberry is a little stiff, and driving it is difficult. My mother
           had to drive Blueberry one day, and came home complaining about how
           hard it was. Then she started asking me if I was gonna take the Beast
-          to the mall, or if I had filled the Beast with gas. Now most people
+          to the mall, or if I had filled the Beast up with gas. Now most people
           would have chosen one name, and probably the name that wasn't Beast.
           But...I thought Blueberry Beast sounded pretty cool, and sometimes I
           even refer to her as Big 'Ol Blueberry Beast!
