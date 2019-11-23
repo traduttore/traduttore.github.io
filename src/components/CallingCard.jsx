@@ -1,6 +1,6 @@
 import React from "react"
 
-import headshot from "../images/headshot.jpg"
+import headshot from "../images/headshot_alex.jpg"
 import "../styles/app.css"
 
 const Callingcard = props => (

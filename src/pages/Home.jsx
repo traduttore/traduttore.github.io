@@ -11,8 +11,8 @@ import {
 } from "reactstrap"
 
 import Layout from "../components/Layout.jsx"
-import waveIcon from "../images/WAVE_logo.png"
-import dpiIcon from "../images/DPI_logo.png"
+import waveIcon from "../images/logo_wave.png"
+import dpiIcon from "../images/logo_dpi.png"
 
 import "../styles/app.css"
 
