@@ -2,12 +2,12 @@ import React from "react"
 
 import { Helmet } from "react-helmet"
 import Header from "./Header.jsx"
-import CallingCard from "./CallingCard.jsx"
+import Callingcard from "./Callingcard.jsx"
 
 import "../styles/app.css"
 
-export default ({ noBorder, children }) => (
-  <React.Fragment>
+export default ({ hasNoBorder, children }) => (
+  <>
     <Helmet
       title={"Alex's Website"}
       meta={[
@@ -17,12 +17,12 @@ export default ({ noBorder, children }) => (
     ></Helmet>
     <Header />
     <main
-      className={noBorder ? "container--main--no-border" : "container--main"}
+      className={hasNoBorder ? "container--main--no-border" : "container--main"}
     >
       {children}
     </main>
     <footer>
-      <CallingCard />
+      <Callingcard />
     </footer>
-  </React.Fragment>
+  </>
 )

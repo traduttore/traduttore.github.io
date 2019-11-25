@@ -35,7 +35,7 @@ export default () => {
   const executeScroll = () => scrollToRef(myRef)
 
   return (
-    <Layout noBorder>
+    <Layout hasNoBorder>
       <div className="flexContainer">
         <UncontrolledCarousel items={items} className="slider" />
         <div className="verticalContainer">

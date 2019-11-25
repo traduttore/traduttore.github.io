@@ -9,16 +9,16 @@ const Callingcard = props => (
       <img src={headshot} className="headshot" alt="headshot" />
       <p className="container--address-text">
         Alex Barkin
-        <br />
+        <br/>
         Linkedin: <a href="https://www.linkedin.com/in/abarkin/">abarkin</a>
-        <br />
+        <br/>
         Github: <a href="https://github.com/alexbarkin">alexbarkin</a>
-        <br />
+        <br/>
         Email:{" "}
         <a href="mailto:alex.barkin@edu.uwaterloo.ca">
           alex.barkin@edu.uwaterloo.ca
         </a>
-        <br />
+        <br/>
       </p>
     </address>
     <iframe
