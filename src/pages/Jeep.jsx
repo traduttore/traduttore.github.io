@@ -2,10 +2,10 @@ import * as React from "react"
 
 import Layout from "../components/Layout.jsx"
 import { UncontrolledCarousel } from "reactstrap"
-import Jeep1 from "../images/Jeep1.jpg"
-import Jeep2 from "../images/Jeep2.jpg"
-import Jeep3 from "../images/Jeep3.jpg"
-import Jeep4 from "../images/Jeep4.jpg"
+import Jeep1 from "../images/jeep_1.jpg"
+import Jeep2 from "../images/jeep_2.jpg"
+import Jeep3 from "../images/jeep_3.jpg"
+import Jeep4 from "../images/jeep_4.jpg"
 
 import "../styles/app.css"
 
@@ -28,14 +28,16 @@ const items = [
   },
 ]
 
-const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
+export const scrollToRef = ref => {
+  window.scrollTo(0, ref.current ? ref.current.offsetTop : 100)
+}
 
 export default () => {
   const myRef = React.useRef(null)
   const executeScroll = () => scrollToRef(myRef)
 
   return (
-    <Layout noBorder>
+    <Layout hasNoBorder>
       <div className="flexContainer">
         <UncontrolledCarousel items={items} className="slider" />
         <div className="verticalContainer">

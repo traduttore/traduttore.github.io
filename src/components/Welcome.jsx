@@ -2,9 +2,9 @@ import React from "react"
 
 import "../styles/app.css"
 
-const interval = 10
+export const interval = 10
 const letter_width = 40
-const numCubes = 20
+export const numCubes = 20
 const welcomeMessage = "Welcome to the site!"
 
 const default_x_pos = []

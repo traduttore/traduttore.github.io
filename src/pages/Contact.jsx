@@ -6,6 +6,6 @@ import "../styles/app.css"
 
 export default () => (
   <Layout>
-    <h1 className="about--title">Contact</h1>
+    <h1>Contact</h1>
   </Layout>
 )
