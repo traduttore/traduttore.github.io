@@ -59,7 +59,7 @@ jobs:
 
       - codecov/upload:
           token: "0b812dbb-13ee-411c-acd0-3da61fc18e99"
-          file: ~/repo/coverage/clover.xml
+          file: ~/repo/coverage/coverage-final.json
 
   lint:
     docker:
