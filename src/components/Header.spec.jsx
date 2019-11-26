@@ -37,7 +37,7 @@ describe("Header", () => {
       expect(sut.find("Modal").prop("backdrop")).toBe("static") //  backdrop static removes option to click outside the modal
     })
 
-    it("renders a tooltip for the non-closable modal option which appears on hover and connot be open when the modal is open", () => {
+    it("renders a tooltip for the non-closable modal option which appears on hover and cannot be open when the modal is open", () => {
       const sut = shallow(<Header />)
       expect(sut.find("Tooltip").exists()).toBeTruthy()
       expect(sut.find("Tooltip").prop("target")).toBe("alert--do-not-click")
