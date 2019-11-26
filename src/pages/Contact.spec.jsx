@@ -3,8 +3,8 @@ import { shallow } from "enzyme"
 
 import Contact from "./Contact.jsx"
 
-describe("Resume", () => {
-  it.only("renders", () => {
+describe("Contact", () => {
+  it("renders", () => {
     const sut = shallow(<Contact />)
     expect(sut.find("h1").exists()).toBeTruthy()
   })

@@ -28,7 +28,7 @@ const items = [
   },
 ]
 
-const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
+export const scrollToRef = ref => {window.scrollTo(0, ref.current ? ref.current.offsetTop: 100)}
 
 export default () => {
   const myRef = React.useRef(null)
