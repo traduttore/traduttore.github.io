@@ -47,7 +47,7 @@ export default () => {
         </div>
       </div>
       <article className="blog-post-content--border">
-        <h1 ref={myRef}>Blueberry Beast</h1>
+        <h1 ref={myRef}>The Blueberry Beast</h1>
         <p>
           Ever since I was a wee lad, I've always aspired to own a Jeep
           Wrangler. I think I was really sold on the idea after watching Dawson
