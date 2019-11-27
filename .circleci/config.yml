@@ -85,6 +85,36 @@ jobs:
       # check linter!
       - run: yarn lint
 
+  deploy:
+    docker:
+      - image: circleci/node:12.13.0
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+
+      - run: yarn install --frozen-lockfile
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - run: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "alexbarkin+ci-build@rogers.com"
+            git config user.name "alexbarkin+ci-build"
+      - add_ssh_keys:
+          fingerprints:
+            - a4:8a:fe:af:db:04:27:4c:c8:36:37:49:5f:f7:21:3e
+
+      - run: yarn deploy
+
 workflows:
   build_test_lint:
     jobs:
@@ -97,3 +127,12 @@ workflows:
           requires:
             - build
       - lint
+      - deploy:
+          requires:
+            - build
+            - test
+            - lint
+          filters:
+            branches:
+              only: 
+                - Gatsby-Dev
