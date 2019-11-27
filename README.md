@@ -17,7 +17,7 @@ This website was a fun project I started in September of 2019, and it's always b
 
 1.  **Create a wicked site.**
 
-    I was working at [Wave](www.waveapps.com) when I first discovered that web development was really cool! I wanted to learn more about it, so I figured I would build a personal webiste.
+    I was working at [Wave](https://www.waveapps.com) when I first discovered that web development was really cool! I wanted to learn more about it, so I figured I would build a personal webiste.
 
 2.  **Learn, Learn, Learn!**
 
