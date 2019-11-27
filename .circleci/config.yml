@@ -109,7 +109,8 @@ jobs:
           name: Install and configure github and gh-pages
           command: |
             yarn global add gh-pages@2.0.1
-            cd repo
+            ls
+            cd ~/repo
             git config user.email "alexbarkin+ci-build@rogers.com"
             git config user.name "alexbarkin+ci-build"
       - add_ssh_keys:
