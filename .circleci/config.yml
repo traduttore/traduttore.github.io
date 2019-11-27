@@ -108,7 +108,8 @@ jobs:
       - run: 
           name: Install and configure github and gh-pages
           command: |
-            npm install -g --silent gh-pages@2.0.1
+            yarn global add gh-pages@2.0.1
+            cd repo
             git config user.email "alexbarkin+ci-build@rogers.com"
             git config user.name "alexbarkin+ci-build"
       - add_ssh_keys:
