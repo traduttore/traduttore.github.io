@@ -27,7 +27,7 @@ const About = () => (
         technical.`}
       </p>
       <p>
-       {`That's when I heard about the University of Waterloo's Mechatronics
+        {`That's when I heard about the University of Waterloo's Mechatronics
         Engineering program. It wasnt necessarily artistic, but it was a diverse
         discipline which would allow me to combine multiple passions of mine.
         The mechanical design and visual coding aspects are more artistic, while

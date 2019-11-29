@@ -137,7 +137,8 @@ class Home extends React.Component {
                 tradeshows. Here I got to get hands on experiences with
                 manufacturing techniques, the design process, and working with
                 clients to make sure the end product is just right! Be sure to
-                check out more details on my `}<Link to="/Resume">Resume.</Link>
+                check out more details on my `}
+                <Link to="/Resume">Resume.</Link>
               </CardBody>
             </Card>
           </Collapse>
@@ -162,7 +163,8 @@ class Home extends React.Component {
                 provides financial solutions for small businesses. This coop, I
                 was on the accounting platform Team, and focused on well
                 designed, maintanable, and reusable code. Be sure to check out
-                more details on my `}<Link to="/Resume">Resume.</Link>
+                more details on my `}
+                <Link to="/Resume">Resume.</Link>
               </CardBody>
             </Card>
           </Collapse>
@@ -208,7 +210,8 @@ class Home extends React.Component {
           <p>{`Now that you're here, take a look around!`}</p>
           <p>
             {`If you see something you like (or something you don't!), lets grab a
-            coffee and `}<Link to="/Contact">chat!</Link>
+            coffee and `}
+            <Link to="/Contact">chat!</Link>
           </p>
           <br />
           Like what you see? Check out my <Link to="/About">
