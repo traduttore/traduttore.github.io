@@ -51,6 +51,5 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-sharp",
-    "gatsby-plugin-eslint",
   ],
 }
