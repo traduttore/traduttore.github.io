@@ -6,7 +6,7 @@ import Callingcard from "./Callingcard.jsx"
 
 import "../styles/app.css"
 
-export default ({ hasNoBorder, children }) => (
+const Layout = ({ hasNoBorder, children }) => (
   <>
     <Helmet
       title={"Alex's Website"}
@@ -26,3 +26,5 @@ export default ({ hasNoBorder, children }) => (
     </footer>
   </>
 )
+
+export default Layout

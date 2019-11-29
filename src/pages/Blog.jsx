@@ -6,7 +6,7 @@ import Layout from "../components/Layout.jsx"
 
 import "../styles/app.css"
 
-export default () => (
+const Blog = () => (
   <Layout>
     <h1>Blogs</h1>
     <nav>
@@ -17,3 +17,5 @@ export default () => (
     <Link to="/About">Learn more about me!</Link>
   </Layout>
 )
+
+export default Blog

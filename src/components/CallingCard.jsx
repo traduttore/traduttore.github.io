@@ -3,7 +3,7 @@ import React from "react"
 import headshot from "../images/headshot_alex.jpg"
 import "../styles/app.css"
 
-const Callingcard = props => (
+const Callingcard = () => (
   <div className="container--address">
     <address className="container--address-me">
       <img src={headshot} className="headshot" alt="headshot" />
@@ -23,7 +23,7 @@ const Callingcard = props => (
     </address>
     <iframe
       src="https://snapwidget.com/embed/751863"
-      allowtransparency="true"
+      allowTransparency="true"
       frameBorder="0"
       scrolling="no"
       className="instagram"

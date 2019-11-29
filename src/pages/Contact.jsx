@@ -4,8 +4,10 @@ import Layout from "../components/Layout.jsx"
 
 import "../styles/app.css"
 
-export default () => (
+const Contact = () => (
   <Layout>
     <h1>Contact</h1>
   </Layout>
 )
+
+export default Contact

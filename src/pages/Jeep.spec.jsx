@@ -12,19 +12,19 @@ describe("Jeep", () => {
   it("scrolls to beginning of text", () => {
     const sut = shallow(<Jeep />)
 
-    global.scrollTo = jest.fn()
+    window.scrollTo = jest.fn()
 
     expect(sut.find("button").exists()).toBeTruthy()
     sut.find("button").simulate("click")
-    expect(global.scrollTo).toHaveBeenCalledTimes(1)
-    expect(global.scrollTo).toHaveBeenCalledWith(0, 100)
+    expect(window.scrollTo).toHaveBeenCalledTimes(1)
+    expect(window.scrollTo).toHaveBeenCalledWith(0, 100)
   })
 
   it("test scrollToRef", () => {
-    global.scrollTo = jest.fn()
+    window.scrollTo = jest.fn()
 
     scrollToRef({ current: { offsetTop: 200 } })
-    expect(global.scrollTo).toHaveBeenCalledTimes(1)
-    expect(global.scrollTo).toHaveBeenCalledWith(0, 200)
+    expect(window.scrollTo).toHaveBeenCalledTimes(1)
+    expect(window.scrollTo).toHaveBeenCalledWith(0, 200)
   })
 })
