@@ -13,7 +13,8 @@
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "test": "jest",
-    "lint": "prettier --check \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint src/**/**.{js,jsx}",
+    "check-prettier": "prettier --check \"**/*.{js,jsx,json,md}\"",
     "coverage": "jest src --coverage"
   },
   "dependencies": {
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
+    "eslint-plugin-react": "^7.17.0",
     "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "jest-canvas-mock": "^2.2.0",

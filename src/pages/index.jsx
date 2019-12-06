@@ -4,9 +4,9 @@ import Welcome from "../components/Welcome.jsx"
 
 import "../styles/index.css"
 
-const IndexPage = props => (
+const IndexPage = () => (
   <div>
-    <h1 className="index--title">Alex's Website</h1>
+    <h1 className="index--title">{"Alex's Website"}</h1>
     <Welcome />
   </div>
 )
