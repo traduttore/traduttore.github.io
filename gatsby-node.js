@@ -1,7 +1,7 @@
-const path = require(`path`)
+const path = require(`path`);
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.jsx`)
+  const { createPage } = actions;
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.jsx`);
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -17,22 +17,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
     }
-  `)
+  `);
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
-    })
-  })
-}
+    });
+  });
+};
 
-const webpack = require("webpack")
+const webpack = require("webpack");
 
 exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
   const config = {
@@ -45,7 +45,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
         Bootstrap: "bootstrap.js",
       }),
     ],
-  }
+  };
   if (stage === "build-html") {
     config.module = {
       rules: [
@@ -80,7 +80,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, loaders }) => {
           use: loaders.null(),
         },
       ],
-    }
+    };
   }
-  actions.setWebpackConfig(config)
-}
+  actions.setWebpackConfig(config);
+};

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import {
   Collapse,
@@ -16,10 +16,10 @@ import {
   Progress,
   DropdownMenu,
   DropdownItem,
-} from "reactstrap"
+} from "reactstrap";
 
-import "../styles/app.css"
-import "bootstrap/dist/css/bootstrap.min.css"
+import "../styles/app.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class Header extends React.Component {
   state = {
@@ -27,31 +27,31 @@ class Header extends React.Component {
     toolTipIsOpen: false,
     modalIsOpen: false,
     loadingPercent: 0,
-  }
+  };
 
   modalToggle = () =>
     this.setState({
       modalIsOpen: !this.state.modalIsOpen,
       toolTipIsOpen: false,
-    })
+    });
   toolTipToggle = () => {
     if (!this.state.modalIsOpen) {
-      this.setState({ toolTipIsOpen: !this.state.toolTipIsOpen })
+      this.setState({ toolTipIsOpen: !this.state.toolTipIsOpen });
     }
-  }
+  };
   dropDownToggle = () =>
-    this.setState({ dropDownIsOpen: !this.state.dropDownIsOpen })
+    this.setState({ dropDownIsOpen: !this.state.dropDownIsOpen });
 
   updatePercent = () => {
     if (this.state.modalIsOpen && this.state.loadingPercent < 98) {
-      this.setState({ loadingPercent: this.state.loadingPercent + 1 })
+      this.setState({ loadingPercent: this.state.loadingPercent + 1 });
     }
-  }
+  };
 
   componentDidMount() {
     setInterval(() => {
-      this.updatePercent()
-    }, 100)
+      this.updatePercent();
+    }, 100);
   }
 
   render() {
@@ -124,8 +124,8 @@ class Header extends React.Component {
           </Collapse>
         </Navbar>
       </nav>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
