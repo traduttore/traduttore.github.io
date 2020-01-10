@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
-import { Link, graphql } from "gatsby"
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/Layout.jsx"
+import Layout from "../components/Layout.jsx";
 
-import "../styles/app.css"
+import "../styles/app.css";
 
 export default function Template({ data }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data; // data.markdownRemark holds your post data
+  const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
       <article>
@@ -21,7 +21,7 @@ export default function Template({ data }) {
         <Link to="/Blog">Go to blogs.</Link>
       </article>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -35,4 +35,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

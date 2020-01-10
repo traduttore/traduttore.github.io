@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/Layout.jsx"
+import Layout from "../components/Layout.jsx";
 
-import "../styles/app.css"
+import "../styles/app.css";
 
 const About = () => (
   <Layout>
@@ -63,6 +63,6 @@ const About = () => (
       </p>
     </article>
   </Layout>
-)
+);
 
-export default About
+export default About;

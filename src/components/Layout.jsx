@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import { Helmet } from "react-helmet"
-import Header from "./Header.jsx"
-import Callingcard from "./Callingcard.jsx"
+import { Helmet } from "react-helmet";
+import Header from "./Header.jsx";
+import Callingcard from "./Callingcard.jsx";
 
-import "../styles/app.css"
+import "../styles/app.css";
 
 const Layout = ({ hasNoBorder, children }) => (
   <>
@@ -25,6 +25,6 @@ const Layout = ({ hasNoBorder, children }) => (
       <Callingcard />
     </footer>
   </>
-)
+);
 
-export default Layout
+export default Layout;

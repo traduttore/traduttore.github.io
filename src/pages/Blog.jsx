@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
-import Layout from "../components/Layout.jsx"
+import Layout from "../components/Layout.jsx";
 
-import "../styles/app.css"
+import "../styles/app.css";
 
 const Blog = () => (
   <Layout>
@@ -16,6 +16,6 @@ const Blog = () => (
     </nav>
     <Link to="/About">Learn more about me!</Link>
   </Layout>
-)
+);
 
-export default Blog
+export default Blog;

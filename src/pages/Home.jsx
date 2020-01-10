@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 import {
   UncontrolledPopover,
   PopoverHeader,
@@ -8,13 +8,13 @@ import {
   Collapse,
   Card,
   CardBody,
-} from "reactstrap"
+} from "reactstrap";
 
-import Layout from "../components/Layout.jsx"
-import waveIcon from "../images/logo_wave.png"
-import dpiIcon from "../images/logo_dpi.png"
+import Layout from "../components/Layout.jsx";
+import waveIcon from "../images/logo_wave.png";
+import dpiIcon from "../images/logo_dpi.png";
 
-import "../styles/app.css"
+import "../styles/app.css";
 
 class Home extends React.Component {
   state = {
@@ -24,7 +24,7 @@ class Home extends React.Component {
     hoverCoopOne: false,
     hoverCoopTwo: false,
     hoverCoopThree: false,
-  }
+  };
 
   toggleCoopOne = () =>
     this.setState({
@@ -32,55 +32,55 @@ class Home extends React.Component {
       coopTwoIsOpen: false,
       coopThreeIsOpen: false,
       hoverCoopOne: false,
-    })
+    });
   toggleCoopTwo = () =>
     this.setState({
       coopTwoIsOpen: !this.state.coopTwoIsOpen,
       coopOneIsOpen: false,
       coopThreeIsOpen: false,
       hoverCoopTwo: false,
-    })
+    });
   toggleCoopThree = () =>
     this.setState({
       coopThreeIsOpen: !this.state.coopThreeIsOpen,
       coopTwoIsOpen: false,
       coopOneIsOpen: false,
       hoverCoopThree: false,
-    })
+    });
 
   handleCoopOneHover() {
     if (this.state.hoverCoopOne === false) {
-      this.setState({ hoverCoopOne: true })
+      this.setState({ hoverCoopOne: true });
     }
   }
 
   handleLeaveCoopOneHover() {
     if (this.state.hoverCoopOne === true) {
-      this.setState({ hoverCoopOne: false })
+      this.setState({ hoverCoopOne: false });
     }
   }
 
   handleCoopTwoHover() {
     if (this.state.hoverCoopTwo === false) {
-      this.setState({ hoverCoopTwo: true })
+      this.setState({ hoverCoopTwo: true });
     }
   }
 
   handleLeaveCoopTwoHover() {
     if (this.state.hoverCoopTwo === true) {
-      this.setState({ hoverCoopTwo: false })
+      this.setState({ hoverCoopTwo: false });
     }
   }
 
   handleCoopThreeHover() {
     if (this.state.hoverCoopThree === false) {
-      this.setState({ hoverCoopThree: true })
+      this.setState({ hoverCoopThree: true });
     }
   }
 
   handleLeaveCoopThreeHover() {
     if (this.state.hoverCoopThree === true) {
-      this.setState({ hoverCoopThree: false })
+      this.setState({ hoverCoopThree: false });
     }
   }
 
@@ -219,7 +219,7 @@ class Home extends React.Component {
           </Link> or <Link to="/Resume">Resume.</Link>
         </article>
       </Layout>
-    )
+    );
   }
 }
-export default Home
+export default Home;

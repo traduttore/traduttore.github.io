@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-import headshot from "../images/headshot_alex.jpg"
-import "../styles/app.css"
+import headshot from "../images/headshot_alex.jpg";
+import "../styles/app.css";
 
 const Callingcard = () => (
   <div className="container--address">
@@ -30,6 +30,6 @@ const Callingcard = () => (
       title="instagram"
     ></iframe>
   </div>
-)
+);
 
-export default Callingcard
+export default Callingcard;
