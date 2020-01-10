@@ -12,7 +12,7 @@ describe("Layout", () => {
   it("has a helmet with a title and meta data", () => {
     const sut = shallow(<Layout />);
     expect(sut.find("HelmetWrapper").prop("title")).toBe("Alex's Website");
-    expect(sut.find("HelmetWrapper").prop("meta").length).toBe(2);
+    expect(sut.find("HelmetWrapper").prop("meta").length).toBe(3);
   });
 
   it("renders a main section and a footer with a Callingcard", () => {
