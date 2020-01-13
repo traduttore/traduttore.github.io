@@ -33,8 +33,10 @@ const About = () => (
         The mechanical design and visual coding aspects are more artistic, while
         the electrical engineering and programming allow me to explore complex
         technical challenges. To learn more about my academics and interests,
-        feel free to check out one of my <Link to="/Blog">Blog Posts</Link>, or
-        my <Link to="/Resume">Resume</Link>!`}
+        feel free to check out one of my `}
+        <a href="/Blog">Blog Posts</a>
+        {`, or my `}
+        <a href="/Resume">Resume</a>!
       </p>
       <h2>{`There's more than just my acedemics!`}</h2>
       <p>
@@ -48,8 +50,8 @@ const About = () => (
         decdided it would be very cool if I was able to decorate premade
         clothing with my own designs. So I set out to learn how, with the help
         of my mother, and Youtube, I completed a simple flower design on a denim
-        shirt! Pictures can be found in my Gallery!`}
-        <comment> add Gallery Page </comment>
+        shirt! Pictures coming soon!`}
+        {/* <comment> add Gallery Page </comment> */}
       </p>
       <p>
         {`And finally I get to talk about my Jeep. Ever since I was a wee lad,
@@ -58,8 +60,9 @@ const About = () => (
         made that dream a reality, and purchased my baby (Blueberry Beast). I
         enjoy taking the roof off, and sometimes even the doors, and just
         spending time with my friends and family while driving! Im sure you want
-        to see more, so I've made a <Link to="/Jeep">Jeep page</Link> dedicated
-        to stories and pictures with my Jeep!`}
+        to see more, so I've made a `}
+        <a href="/Jeep">Jeep page</a>
+        {` dedicated to stories and pictures with my Jeep!`}
       </p>
     </article>
   </Layout>
