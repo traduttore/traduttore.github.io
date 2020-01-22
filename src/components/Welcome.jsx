@@ -3,9 +3,10 @@ import React from "react";
 import "../styles/app.css";
 
 export const interval = 10;
-const letter_width = 40;
+let letter_width = 60;
+let letter_font;
 export const numCubes = 20;
-const welcomeMessage = "Welcome to the site!";
+const welcomeMessage = "WELCOME TOMY WEBSITE!";
 
 const default_x_pos = [];
 const default_y_pos = [];
@@ -32,6 +33,17 @@ class Welcome extends React.Component {
     this.canvasRef = React.createRef();
   }
 
+  fluctateColor = () => {
+    for (let counter = 0; counter < numCubes; counter++) {
+      this.colour[counter] =
+        this.colour[counter].substring(0, 14) +
+        (this.colour[counter].substring(14, 16) === "70"
+          ? "30"
+          : Number(this.colour[counter].substring(14, 16)) + 1) +
+        this.colour[counter].substring(16);
+    }
+  };
+
   moveObjects = () => {
     this.state.ctx.clearRect(
       0,
@@ -44,8 +56,8 @@ class Welcome extends React.Component {
     let isLeft = this.state.is_left;
     let yloc = this.state.y;
     let xloc = this.state.x;
-    if (this.state.hover === false) {
-      for (let counter = 0; counter < numCubes; counter++) {
+    for (let counter = 0; counter < numCubes; counter++) {
+      if (this.state.hover === false) {
         if (yloc[counter] + letter_width > this.state.ctx.canvas.height) {
           isUp[counter] = true;
         }
@@ -62,56 +74,14 @@ class Welcome extends React.Component {
           yloc[counter] + (isUp[counter] ? -speed[counter] : speed[counter]);
         xloc[counter] =
           xloc[counter] + (isLeft[counter] ? -speed[counter] : speed[counter]);
-        let ctxCol = this.state.ctx;
-        ctxCol.fillStyle = this.colour[counter];
-        this.setState({
-          ctx: ctxCol,
-        });
+      } else {
+        if (yloc[counter] !== default_y_pos[counter]) {
+          isUp[counter] = yloc[counter] > default_y_pos[counter];
+        }
+        if (xloc[counter] !== default_x_pos[counter]) {
+          isLeft[counter] = xloc[counter] > default_x_pos[counter];
+        }
 
-        this.state.ctx.fillRect(
-          xloc[counter],
-          yloc[counter],
-          letter_width,
-          letter_width
-        );
-
-        ctxCol = this.state.ctx;
-        ctxCol.fillStyle = "#212424";
-        ctxCol.font = "20px Roboto Mono monospace";
-        ctxCol.textAlign = "center";
-        ctxCol.textBaseline = "middle";
-        this.setState({
-          ctx: ctxCol,
-        });
-
-        this.state.ctx.fillText(
-          welcomeMessage[counter],
-          xloc[counter] + letter_width / 2,
-          yloc[counter] + letter_width / 2
-        );
-        this.setState({
-          y: yloc,
-          x: xloc,
-        });
-      }
-      this.setState({
-        is_left: isLeft,
-        is_up: isUp,
-      });
-    } else {
-      for (let counter = 0; counter < numCubes; counter++) {
-        if (yloc[counter] > default_y_pos[counter]) {
-          isUp[counter] = true;
-        }
-        if (yloc[counter] < default_y_pos[counter]) {
-          isUp[counter] = false;
-        }
-        if (xloc[counter] > default_x_pos[counter]) {
-          isLeft[counter] = true;
-        }
-        if (xloc[counter] < default_x_pos[counter]) {
-          isLeft[counter] = false;
-        }
         if (
           Math.abs(yloc[counter] - default_y_pos[counter]) >
           5 * speed[counter]
@@ -132,59 +102,65 @@ class Welcome extends React.Component {
         } else {
           xloc[counter] = default_x_pos[counter];
         }
-        let ctxCol = this.state.ctx;
-        ctxCol.fillStyle = this.colour[counter];
-        this.setState({
-          ctx: ctxCol,
-        });
-
-        this.state.ctx.fillRect(
-          xloc[counter],
-          yloc[counter],
-          letter_width,
-          letter_width
-        );
-
-        ctxCol = this.state.ctx;
-        ctxCol.fillStyle = "#212424";
-        ctxCol.font = "20px Roboto Mono monospace";
-        ctxCol.textAlign = "center";
-        ctxCol.textBaseline = "middle";
-        this.setState({
-          ctx: ctxCol,
-        });
-
-        this.state.ctx.fillText(
-          welcomeMessage[counter],
-          xloc[counter] + letter_width / 2,
-          yloc[counter] + letter_width / 2
-        );
-        this.setState({
-          y: yloc,
-          x: xloc,
-        });
+        if (
+          counter === 0 &&
+          xloc[counter] === default_x_pos[counter] &&
+          yloc[counter] === default_y_pos[counter]
+        ) {
+          this.fluctateColor();
+        }
       }
+      let ctxCol = this.state.ctx;
+      ctxCol.strokeStyle = this.colour[counter];
+      ctxCol.fillStyle = this.colour[counter];
+      ctxCol.font = letter_font;
+      ctxCol.textAlign = "center";
+      ctxCol.textBaseline = "middle";
       this.setState({
-        is_left: isLeft,
-        is_up: isUp,
+        ctx: ctxCol,
+      });
+
+      this.state.ctx.strokeRect(
+        xloc[counter],
+        yloc[counter],
+        letter_width,
+        letter_width
+      );
+      this.state.ctx.fillText(
+        welcomeMessage[counter],
+        xloc[counter] + letter_width / 2,
+        yloc[counter] + letter_width / 2
+      );
+      this.setState({
+        y: yloc,
+        x: xloc,
       });
     }
+    this.setState({
+      is_left: isLeft,
+      is_up: isUp,
+    });
   };
 
   getRandomColor = () => {
-    let letters = "0123456789ABCDEF";
-    let colString = "#";
-    for (var i = 0; i < 6; i++) {
-      colString += letters[Math.floor(Math.random() * 16)];
-    }
-    return colString;
+    let h = 200;
+    let s = Math.floor(Math.random() * 20) + 80;
+    let l = Math.floor(Math.random() * 40) + 30;
+    return "hsl(" + h + ", " + s + "%, " + l + "%)";
   };
 
   componentDidMount() {
+    const width = window.innerWidth;
+    const adaptive_letter_width = Math.floor((1.5 * width) / numCubes);
+    letter_width =
+      adaptive_letter_width < letter_width
+        ? adaptive_letter_width
+        : letter_width;
+    letter_font = Math.floor(0.5 * letter_width) + "px Arial";
     const canvas = this.canvasRef.current;
     const ctx = canvas.getContext("2d");
     this.setState({ ctx: ctx });
-    ctx.canvas.width = 0.8 * window.innerWidth;
+    ctx.canvas.width = 0.9 * window.innerWidth;
     ctx.canvas.height = 0.8 * window.innerHeight;
 
     for (let counter = 0; counter < numCubes; counter++) {
