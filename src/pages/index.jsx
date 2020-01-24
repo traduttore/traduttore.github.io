@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import Welcome from "../components/Welcome.jsx";
 
-import "../styles/index.css";
+import "../styles/app.css";
 
 const IndexPage = () => (
   <div>
