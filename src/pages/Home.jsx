@@ -90,7 +90,7 @@ class Home extends React.Component {
         <h1>Welcome to my homepage!</h1>
         <article className="blog-post-content">
           <p>Hi!</p>
-          <p>My name is Alex Barkin, and im very glad you found my website!</p>
+          <p>My name is Alex Barkin, and I'm very glad you found my website!</p>
           <p>
             {`I'm currently a member of the Mechatronics class of 2022 at the
             University of Waterloo. I am going into my third year of studies and
