@@ -47,6 +47,12 @@ module.exports = {
         icon: "static/AB-icon.svg",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-158689307-1",
+      },
+    },
     "gatsby-transformer-sharp",
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
