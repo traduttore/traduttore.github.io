@@ -17,6 +17,10 @@ a {
     color: #17a2b8;
 }
 
+.launch:hover {
+    color: hsla(200,90%,50%);
+}
+
 footer, .container--main {
     background-color: #212424;
 }
