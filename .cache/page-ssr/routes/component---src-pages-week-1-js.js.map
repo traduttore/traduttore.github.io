@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-week-1-js.js","mappings":";;;;;;;;;;;;;;AAAA;;AAEA,MAAMC,KAAK,GAAG,MAAM;AAChB,sBAAO,sEAAP;AACH,CAFD","sources":["webpack://traduttore/./src/pages/week1.js"],"sourcesContent":["import * as React from \"react\"\n\nconst blog1 = () => {\n    return <h1>Blog 1</h1>\n}"],"names":["React","blog1"],"sourceRoot":""}
