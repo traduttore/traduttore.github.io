@@ -14,7 +14,7 @@ const Blog = () => (
       <br />
       <a href="/blog-posts/Blog2">Blog #2</a>
     </nav>
-    <Link to="/About">Learn more about the project!</Link>
+    <Link to="/Team">Learn more about the team!</Link>
   </Layout>
 );
 

@@ -66,7 +66,7 @@ class Header extends React.Component {
                 <NavLink href="/Home/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/About/">About</NavLink>
+                <NavLink href="/Team/">Team</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/traduttore" target="_blank">

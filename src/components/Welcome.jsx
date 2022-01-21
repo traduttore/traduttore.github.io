@@ -37,8 +37,8 @@ class Welcome extends React.Component {
     for (let counter = 0; counter < numCubes; counter++) {
       this.colour[counter] =
         this.colour[counter].substring(0, 14) +
-        (this.colour[counter].substring(14, 16) === "70"
-          ? "30"
+        (this.colour[counter].substring(14, 16) === "76"
+          ? "36"
           : Number(this.colour[counter].substring(14, 16)) + 1) +
         this.colour[counter].substring(16);
     }
@@ -143,9 +143,9 @@ class Welcome extends React.Component {
   };
 
   getRandomColor = () => {
-    let h = 260;
-    let s = Math.floor(Math.random() * 20) + 80;
-    let l = Math.floor(Math.random() * 40) + 10;
+    let h = 355;
+    let s = Math.floor(Math.random() * 20) + 68;
+    let l = Math.floor(Math.random() * 40) + 36;
     return "hsl(" + h + ", " + s + "%, " + l + "%)";
   };
 

@@ -1,21 +1,27 @@
 body {
     /* This is to override bootstrap's white background */
-    background-color: #b4b8b9 !important; 
+    background-color: #a8dadc !important; 
 }
 
 h1 {
-    color: #360891;
+    color: #1d3557;
     font-family: 'Arial', monospace;
     font-weight: 600 !important;
 }
 
 h2 {
-    color: #DEF2F1;
+    color: #1d3557;
     font-family: 'Arial', monospace;
 }
 
 .darkDropdown {
-    background-color: #b4b8b9!important;
+    background-color: #343a40 !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #444a50!important;
 }
 
 .navbar-dark.navbar-brand {
@@ -28,7 +34,7 @@ h2 {
 }
 
 a {
-    color: #ffffffad !important;
+    color: #f1faee !important;
 }
 
 .launch:hover {
@@ -36,7 +42,7 @@ a {
 }
 
 footer, .container--main {
-    background-color: #b4b8b9;
+    background-color: #a8dadc;
 }
 
 .index--title {
@@ -58,7 +64,7 @@ footer, .container--main {
 }
 
 .container--graphics {
-    background-color: #b4b8b9;
+    background-color: #a8dadc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,15 +85,16 @@ footer, .container--main {
     padding: 15px;
     font-family: 'Arial', monospace;
     font-size: 2em;
-    color: #000000;
-    border: 1px solid #000000;
+    color: #457b9d !important;
+    background-color: #a8dadc;
+    border: 1px solid #457b9d;
     justify-content: center;
     align-self: center;
     font-weight: lighter;
 }
 
 .blog-post-content, .blog-post-content--border, .container--address {
-    color: #ffffff;
+    color: #457b9d;
     font-family: 'Arial', monospace;
     font-weight: 500;
 }
@@ -110,6 +117,7 @@ footer, .container--main {
 
 .container--address-me {
     display: flex;
+    flex-direction: column;
 }
 
 .container--address-text {
