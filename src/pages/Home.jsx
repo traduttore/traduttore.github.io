@@ -19,7 +19,7 @@ class Home extends React.Component {
             process.`}
           </p>
           <p>
-          <img src={danialSign}/>
+          <img style={{maxWidth:'100%'}} src={danialSign}/>
           </p>
           <p>
             {`Thank you for checking out our website. Take a look around and if

@@ -42,7 +42,7 @@ module.exports = {
         name: "Traduttore",
         short_name: "Traduttore",
         start_url: "/",
-        icon: "static/trad-icon.ico",
+        icon: "static/trad-icon.png",
       },
     },
     {
