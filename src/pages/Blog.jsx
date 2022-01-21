@@ -10,11 +10,11 @@ const Blog = () => (
   <Layout>
     <h1>Blogs</h1>
     <nav>
-      <a href="/blog-posts/Wave1">Wave Coop #1</a>
+      <a href="/blog-posts/Blog1">Blog #1</a>
       <br />
-      <a href="/blog-posts/Wave2">Wave Coop #2</a>
+      <a href="/blog-posts/Blog2">Blog #2</a>
     </nav>
-    <Link to="/About">Learn more about me!</Link>
+    <Link to="/About">Learn more about the project!</Link>
   </Layout>
 );
 

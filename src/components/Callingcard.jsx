@@ -6,29 +6,10 @@ import "../styles/app.css";
 const Callingcard = () => (
   <div className="container--address">
     <address className="container--address-me">
-      <img src={headshot} className="headshot" alt="headshot" />
-      <p className="container--address-text">
-        Alex Barkin
-        <br />
-        Linkedin: <a href="https://www.linkedin.com/in/abarkin/">abarkin</a>
-        <br />
-        Github: <a href="https://github.com/alexbarkin">alexbarkin</a>
-        <br />
-        Email:{" "}
-        <a href="mailto:alex.barkin@edu.uwaterloo.ca">
-          alex.barkin@edu.uwaterloo.ca
-        </a>
-        <br />
+      <p>
+        something will be here - Alex 
       </p>
     </address>
-    <iframe
-      src="https://snapwidget.com/embed/751863"
-      allowTransparency="true"
-      frameBorder="0"
-      scrolling="no"
-      className="instagram"
-      title="instagram"
-    ></iframe>
   </div>
 );
 

@@ -58,7 +58,7 @@ class Header extends React.Component {
     return (
       <nav>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">Alex Barkin</NavbarBrand>
+          <NavbarBrand href="/">Traduttore</NavbarBrand>
           <NavbarToggler onClick={this.dropDownToggle} />
           <Collapse isOpen={this.state.dropDownIsOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -69,57 +69,26 @@ class Header extends React.Component {
                 <NavLink href="/About/">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Resume/">Resume</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/Jeep/">Jeep</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/alexbarkin" target="_blank">
+                <NavLink href="https://github.com/traduttore" target="_blank">
                   GitHub
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://docs.google.com/presentation/d/1FJB6xehWq72gQg_H1gJjM2kmY3PL8P7qUFVa5VZLVAI/edit?usp=sharing" target="_blank">
+                  Pitch
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Blogs
                 </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem tag="a" href="/blog-posts/Wave1">
-                    Wave Coop #1
+                <DropdownMenu className="darkDropdown" right>
+                  <DropdownItem tag="a" href="/blog-posts/Blog1">
+                    Blog #1
                   </DropdownItem>
-                  <DropdownItem tag="a" href="/blog-posts/Wave2">
-                    Wave Coop #2
+                  <DropdownItem tag="a" href="/blog-posts/Blog2">
+                    Blog #2
                   </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem
-                    id="alert--do-not-click"
-                    onClick={this.modalToggle}
-                  >
-                    dont click me
-                  </DropdownItem>
-                  <Tooltip
-                    placement="right"
-                    isOpen={this.state.toolTipIsOpen}
-                    target="alert--do-not-click"
-                    toggle={this.toolTipToggle}
-                  >
-                    You sure you want to click me?
-                  </Tooltip>
-                  <Modal
-                    isOpen={this.state.modalIsOpen}
-                    toggle={this.modalToggle}
-                    keyboard={false}
-                    backdrop="static"
-                  >
-                    <ModalBody className="modal-main">
-                      <h4>Loading...</h4>
-                      <Progress
-                        animated
-                        color="info"
-                        value={this.state.loadingPercent}
-                      />
-                    </ModalBody>
-                  </Modal>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

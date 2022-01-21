@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Alex's Website`,
+    title: `Traduttore`,
     siteUrl: `localhost:8000`,
     description: `My own personal website, all about me!`,
   },
@@ -26,25 +26,23 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: "Nanum Gothic Coding",
-            variants: ["400", "400i", "700", "700i"],
-            subsets: ["latin-ext"],
-          },
+          `limelight`,
+          `source sans pro\:300,400,400i,700`,
+          `bodoni mt`,
         ],
-        formats: ["woff", "woff2"],
-      },
+        display: 'swap'
+      }
     },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Alex's Website",
-        short_name: "Alex Barkin",
+        name: "Traduttore",
+        short_name: "Traduttore",
         start_url: "/",
-        icon: "static/AB-icon.svg",
+        icon: "static/trad-icon.ico",
       },
     },
     {

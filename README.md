@@ -1,12 +1,12 @@
 [![CircleCI](https://circleci.com/gh/alexbarkin/alexbarkin.github.io/tree/Gatsby-Dev.svg?style=svg)](https://circleci.com/gh/alexbarkin/alexbarkin.github.io/tree/Gatsby-Dev) [![codecov](https://codecov.io/gh/alexbarkin/alexbarkin.github.io/branch/Gatsby-Dev/graph/badge.svg)](https://codecov.io/gh/alexbarkin/alexbarkin.github.io)
 
 <p align="center">
-  <a href="alexbarkin.github.io">
-    <img alt="Alex Barkin" src="./static/AB-icon.svg" width="60" />
+  <a href="traduttore.github.io">
+    <img alt="Traduttore" src="./static/trad-icon.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Alex Barkin's Personal Website
+  Traduttore
 </h1>
 
 Welcome to the code base for alexbarkin.github.io!
@@ -40,7 +40,7 @@ Here's a look at the code layout, focusing on the aspects which I wrote.
     |   ├── styles
     |   └── templates
     ├── _static
-    |   └── AB-icon.svg
+    |   └── trad-icon.svg
     ├── gatsby-config.js
     ├── gatsby-node.js
     └── README.md

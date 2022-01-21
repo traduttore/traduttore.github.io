@@ -1,7 +1,7 @@
 ---
-path: "/blog-posts/Wave2"
+path: "/blog-posts/Blog2"
 date: "2019-10-20"
-title: "My second coop at WaveHq"
+title: "Blog #2"
 ---
 
 Coming soon!

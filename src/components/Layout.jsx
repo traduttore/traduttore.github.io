@@ -9,10 +9,10 @@ import "../styles/app.css";
 const Layout = ({ hasNoBorder, children }) => (
   <>
     <Helmet
-      title={"Alex's Website"}
+      title={"Traduttore"}
       meta={[
-        { name: "description", content: "Alex Barkin's Personal Website" },
-        { name: "keywords", content: "alex, barkin, blog, developer" },
+        { name: "description", content: "Traduttore" },
+        { name: "keywords", content: "asl, waterloo, uw, fydp" },
         {
           name: "google-site-verification",
           content: "Wy0ipAo1svzpLXoMUYJUu54KIHc47_MxBjvjoho32T0",

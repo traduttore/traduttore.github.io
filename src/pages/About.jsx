@@ -6,15 +6,10 @@ import "../styles/app.css";
 
 const About = () => (
   <Layout>
-    <h1>About me</h1>
+    <h1>About</h1>
     <article className="blog-post-content">
       <p>
-        {`I've always loved exploring how things work and being creative along the
-        way. This lead to my decision to join Claude Watson School for the Arts
-        (CWSA) in grade 4. After graduating from CWSA, I decided to attend the
-        Math and Computer Science (MACS) program at William Lyon Mackenzie CI
-        (WLMCI? too many acronyms). I really enjoyed the arts, but I also
-        realised that it wasn't what I wanted to do with the rest of my life.`}
+        {`Communication in service environments between ASL and non-ASL users is difficult without (rare and expensive) ASL interpreters`}
       </p>
       <p>
         {`In grade 9, I took my first coding class. This was a pivotal moment, as
@@ -35,8 +30,6 @@ const About = () => (
         technical challenges. To learn more about my academics and interests,
         feel free to check out one of my `}
         <a href="/Blog">Blog Posts</a>
-        {`, or my `}
-        <a href="/Resume">Resume</a>!
       </p>
       <h2>{`There's more than just my acedemics!`}</h2>
       <p>

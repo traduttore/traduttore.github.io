@@ -6,7 +6,7 @@ export const interval = 10;
 let letter_width = 60;
 let letter_font;
 export const numCubes = 20;
-const welcomeMessage = "WELCOME TOMY WEBSITE!";
+const welcomeMessage = "WELCOME TOTRADUTTORE!";
 
 const default_x_pos = [];
 const default_y_pos = [];
@@ -143,9 +143,9 @@ class Welcome extends React.Component {
   };
 
   getRandomColor = () => {
-    let h = 200;
+    let h = 260;
     let s = Math.floor(Math.random() * 20) + 80;
-    let l = Math.floor(Math.random() * 40) + 30;
+    let l = Math.floor(Math.random() * 40) + 10;
     return "hsl(" + h + ", " + s + "%, " + l + "%)";
   };
 
@@ -213,7 +213,7 @@ class Welcome extends React.Component {
             onMouseEnter={this.handleHover.bind(this)}
             onMouseLeave={this.handleleaveHover.bind(this)}
           >
-            Launch
+            ENTER
           </a>
         </div>
       </figure>
