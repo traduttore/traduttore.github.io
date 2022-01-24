@@ -1,27 +1,48 @@
+:root {
+    --main-color: #000000;
+    --secondary-color: #e4e4e4;
+    --heading-color: #054A91;
+    --header-color: #242424;
+    --link-color: #3E7CB1;
+}
+.nav-head {
+    background-color: var(--header-color);
+}
+
 body {
     /* This is to override bootstrap's white background */
-    background-color: #a8dadc !important; 
+    background-color: var(--secondary-color) !important; 
+}
+
+img {
+    border-radius: 5px;
+}
+
+.centered-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 h1 {
-    color: #1d3557;
+    color: var(--heading-color);
     font-family: 'Arial', monospace;
     font-weight: 600 !important;
 }
 
 h2 {
-    color: #1d3557;
+    color: var(--heading-color);
     font-family: 'Arial', monospace;
 }
 
 .darkDropdown {
-    background-color: #343a40 !important;
+    background-color: var(--header-color) !important;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #444a50!important;
+    background-color: #444a50 !important;
 }
 
 .navbar-dark.navbar-brand {
@@ -34,7 +55,7 @@ h2 {
 }
 
 a {
-    color: #f1faee !important;
+    color: var(--link-color) !important;
 }
 
 .launch:hover {
@@ -42,7 +63,7 @@ a {
 }
 
 footer, .container--main {
-    background-color: #a8dadc;
+    background-color: var(--secondary-color);
 }
 
 .index--title {
@@ -61,10 +82,13 @@ footer, .container--main {
 
 .container--main {
     padding: 2%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container--graphics {
-    background-color: #a8dadc;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,16 +109,16 @@ footer, .container--main {
     padding: 15px;
     font-family: 'Arial', monospace;
     font-size: 2em;
-    color: #457b9d !important;
-    background-color: #a8dadc;
-    border: 1px solid #457b9d;
+    color: var(--main-color) !important;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-color);
     justify-content: center;
     align-self: center;
     font-weight: lighter;
 }
 
 .blog-post-content, .blog-post-content--border, .container--address {
-    color: #457b9d;
+    color: var(--main-color);
     font-family: 'Arial', monospace;
     font-weight: 500;
 }
@@ -113,6 +137,7 @@ footer, .container--main {
 .container--address {
     display: flex;
     flex-direction: column;
+    /* background-color: var(--header-color); */
 }
 
 .container--address-me {

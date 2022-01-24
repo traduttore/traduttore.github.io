@@ -6,7 +6,7 @@ import Callingcard from "./Callingcard.jsx";
 
 import "../styles/app.css";
 
-const Layout = ({ hasNoBorder, children }) => (
+const Layout = ({ hasNoBorder, children, image }) => (
   <>
     <Helmet
       title={"Traduttore"}
@@ -20,6 +20,7 @@ const Layout = ({ hasNoBorder, children }) => (
       ]}
     />
     <Header />
+    {image}
     <main
       className={hasNoBorder ? "container--main--no-border" : "container--main"}
     >

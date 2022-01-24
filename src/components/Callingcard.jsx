@@ -9,8 +9,14 @@ import "../styles/app.css";
 const Callingcard = () => (
   <div className="container--address">
     <address className="container--address-me">
-    <p style={{margin:"0 10px"}}>{`Meet the team\n`}</p>
-    <div>
+    <div style={
+      {height: "1px",
+      width: "100%",
+      backgroundColor: "darkgray",
+      marginBottom: "10px"
+    }}/>
+    <h2 style={{width:"fit-content", marginLeft:"auto", marginRight:"auto"}}><a href='/Team/'>{`Meet the team\n`}</a></h2>
+    <div style={{width:"fit-content", marginLeft:"auto", marginRight:"auto"}}>
       <a href="https://www.linkedin.com/in/abarkin/" target="_blank">
         <img src={headshotAlex} className="headshot" alt="headshot"/>
       </a>

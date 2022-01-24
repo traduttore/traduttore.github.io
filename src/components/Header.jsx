@@ -2,21 +2,19 @@ import React from "react";
 
 import {
   Collapse,
-  Tooltip,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  Modal,
-  ModalBody,
   UncontrolledDropdown,
   DropdownToggle,
-  Progress,
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
+
+import logo from "../../static/trad-icon.png";
 
 import "../styles/app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -57,11 +55,11 @@ class Header extends React.Component {
   render() {
     return (
       <nav>
-        <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">Traduttore</NavbarBrand>
+        <Navbar className="nav-head" expand="md">
+          <NavbarBrand href="/Home/"><img style={{width: '22px', height: '32px'}}src={logo}/></NavbarBrand>
           <NavbarToggler onClick={this.dropDownToggle} />
           <Collapse isOpen={this.state.dropDownIsOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav style={{fontWeight: 700}} className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/Home/">Home</NavLink>
               </NavItem>
