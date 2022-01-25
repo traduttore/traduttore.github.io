@@ -16,18 +16,18 @@ const Callingcard = () => (
       marginBottom: "10px"
     }}/>
     <h2 style={{width:"fit-content", marginLeft:"auto", marginRight:"auto"}}><a href='/Team/'>{`Meet the team\n`}</a></h2>
-    <div style={{width:"fit-content", marginLeft:"auto", marginRight:"auto"}}>
+    <div style={{width:"fit-content", marginLeft:"auto", marginRight:"auto", display: "flex"}}>
       <a href="https://www.linkedin.com/in/abarkin/" target="_blank">
         <img src={headshotAlex} className="headshot" alt="headshot"/>
       </a>
       <a href="https://www.linkedin.com/in/alex-alexiou/" target="_blank">
-      <img src={headshotAlexiou} className="headshot" alt="headshot" />
+       <img src={headshotAlexiou} className="headshot" alt="headshot" />
       </a>
       <a href="https://www.linkedin.com/in/camcnelson/" target="_blank">
-      <img src={headshotCam} className="headshot" alt="headshot" />
+       <img src={headshotCam} className="headshot" alt="headshot" />
       </a>
       <a href="https://www.linkedin.com/in/dmohazab/" target="_blank">
-      <img src={headshotDanial} className="headshot" alt="headshot" />
+       <img src={headshotDanial} className="headshot" alt="headshot" />
       </a>
     </div>
     </address>

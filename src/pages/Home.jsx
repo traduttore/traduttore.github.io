@@ -45,7 +45,7 @@ class Home extends React.Component {
             a gap in communication.`}
           </p>
           <p style={{width:'100%'}} >
-          <img className="centered-image" style={{maxWidth:'500px'}} src={danialSign}/>
+          <img className="centered-image" style={{width:'-webkit-fill-available', maxWidth:'500px'}} src={danialSign}/>
           </p>
           <p>
             {`Thank you for checking out our website. Take a look around and if
