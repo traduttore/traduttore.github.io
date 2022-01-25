@@ -157,6 +157,13 @@ footer, .container--main {
     padding: 10px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .headshot {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
 .coop-icon {
     max-width: 70px;
     max-height: 70px;
