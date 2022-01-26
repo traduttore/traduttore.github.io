@@ -31,21 +31,23 @@ const Team = () => (
       </div>
       <p>{`Hi, I’m Cam. I am in charge of product management for this project and have therefore 
       taken on many roles, including design and development on both the frontend and backend. 
-      After graduation, I will be joining Wish full-time as an Associate Product Manager. `}</p>
+      After graduation, I will be joining Wish full-time as an Associate Product Manager.`}</p>
       <div style={{display: 'flex'}}>
         <a href="https://www.linkedin.com/in/alex-alexiou/" target="_blank">
           <img src={headshotAlexiou} className="headshot" alt="headshot" />
         </a>
         <h2 style ={{flex: 1,alignSelf: "center"}}>Alex Alexiou</h2>
       </div>
-      <p>{`Hi I'm Alex`}</p>
+      <p>{`Hi, I’m Alex. I am responsible for the mechanical and electrical design and assembly 
+      on the traduttore project. Following graduation, I am looking to continue my growth in the 
+      field of aviation simulation at CAE.`}</p>
       <div style={{display: 'flex'}}>
         <a href="https://www.linkedin.com/in/dmohazab/" target="_blank">
           <img src={headshotDanial} className="headshot" alt="headshot" />
         </a>
         <h2 style ={{flex: 1,alignSelf: "center"}}>Danial Mohazab</h2>
       </div>
-      <p>{`Hi I'm Cam`}</p>
+      <p>{`Hi I'm Danial`}</p>
     </article>
   </Layout>
 );
