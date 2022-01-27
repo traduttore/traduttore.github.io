@@ -38,7 +38,7 @@ const Team = () => (
         </a>
         <h2 style ={{flex: 1,alignSelf: "center"}}>Alex Alexiou</h2>
       </div>
-      <p>{`Hi, I’m Alex. I am responsible for the mechanical and electrical design and assembly 
+      <p>{`Hey, I’m Alex. I am responsible for the mechanical and electrical design and assembly 
       on the traduttore project. Following graduation, I am looking to continue my growth in the 
       field of aviation simulation at CAE.`}</p>
       <div style={{display: 'flex'}}>
@@ -47,7 +47,9 @@ const Team = () => (
         </a>
         <h2 style ={{flex: 1,alignSelf: "center"}}>Danial Mohazab</h2>
       </div>
-      <p>{`Hi I'm Danial`}</p>
+      <p>{`Hey! I’m working on the back-end and machine learning model for our project. 
+      For work I typically do back-end development and Product Management, and will be going 
+      into Software Development after I graduate.`}</p>
     </article>
   </Layout>
 );
