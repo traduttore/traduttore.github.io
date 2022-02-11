@@ -87,6 +87,12 @@ class Header extends React.Component {
                   <DropdownItem tag="a" href="/blog-posts/Blog2">
                     Blog #2
                   </DropdownItem>
+                  <DropdownItem tag="a" href="/blog-posts/Blog3">
+                    Blog #3
+                  </DropdownItem>
+                  <DropdownItem tag="a" href="/blog-posts/Blog4">
+                    Blog #4
+                  </DropdownItem>
                   <DropdownItem divider style={{borderTopColor: '#3E7CB1'}}/>
                   <DropdownItem tag="a" href="/Blog">
                     All Blogs
