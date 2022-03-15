@@ -21,6 +21,10 @@ const Blog = () => (
       <a href="/blog-posts/Blog5">Blog #5</a>
       <br />
       <a href="/blog-posts/Blog6">Blog #6</a>
+      <br />
+      <a href="/blog-posts/Blog7">Blog #7</a>
+      <br />
+      <a href="/blog-posts/Blog8">Blog #8</a>
     </nav>
   </Layout>
 );

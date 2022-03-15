@@ -1,14 +1,12 @@
 ---
 path: "/blog-posts/Blog5"
-date: "2022-03-14"
+date: "2022-02-21"
 title: "Blog #5"
 ---
 
-The CADs were completed in the previous term; however, many changes were necessary due to the change of the hardware board within the housing. As stated in previous blog posts, we switched from a Raspberry Pi 3B+ to a Raspberry Pi 4B to take advantage of the added processing power that the newer model offers.
+The prints for the device were done on an Ender 3 using PLA as the material. Due to problems with the printer, the print of the housing failed twice, which happened to be largest and longest print, delaying the project. Repairs on to the printer were made within the following days and the print was successful on the third attempt. 
 
-The size of the board is approximately the same as the previous one specified, however the ports are at different positions and are different in nature. For instance, the power port is a USB C female rather than a USB micro. The size and positions of the holes on the back of the housing therefore changed. 
+Upon assembling the device for the first time, we realized that the space within the housing was not enough such that all the wires could properly fit. Certain wires also required 90-degree connectors as to avoid bending and damaging the wire over time. Some of the walls of the device were very thin, which did not allow for the threads and screws to be inserted within the plastic properly.
+New wires, specifically for the USB powering the screen and the HDMI, were ordered with 90-degree connectors and the housing interior and walls were made slightly bigger in order to facilitate assembly. When increasing the size of the housing, we realized that the depth of the device slightly surpassed the size of our constraint, however the team agreed that this would be the best solution and was reasonable to surpass the specification by a few millimeters. 
 
-Additionally, the screen ordered was slightly different in size relative to the one used to CAD the initial housing. Upon receiving the LCD touch screen, the dimensions of the housing and the screen cap were changed to fit the new screen.
-
-Finally, since the screen ordered had touch capabilities, it was decided that the button on the design would be removed and replaced with a software button on the screen itself to initiate the translation sequence. 
-The next step in the assembly of the device would be to 3D print all of the parts required and assemble the device as a first prototype.
+The next step in terms of the mechanical assembly would be to print the modified parts and assemble the device once more once all the parts have arrived. 
