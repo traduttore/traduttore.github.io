@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/alexbarkin/alexbarkin.github.io/tree/Gatsby-Dev.svg?style=svg)](https://circleci.com/gh/alexbarkin/alexbarkin.github.io/tree/Gatsby-Dev) [![codecov](https://codecov.io/gh/alexbarkin/alexbarkin.github.io/branch/Gatsby-Dev/graph/badge.svg)](https://codecov.io/gh/alexbarkin/alexbarkin.github.io)
-
 <p align="center">
   <a href="traduttore.github.io">
     <img alt="Traduttore" src="./static/trad-icon.svg" width="60" />
@@ -9,55 +7,43 @@
   Traduttore
 </h1>
 
-Welcome to the code base for alexbarkin.github.io!
-If you've made it this far, then you're either interested in my development skills, or a really good stalker...
-This website was a fun project I started in September of 2019, and it's always being updated.
+Welcome to the code base for traduttore.github.io!
+If you've made it this far, then you're either interested in accessibilty, or grading the website...
+This website was a fun project that is always being updated.
 
 ## 🚀 The Goal
 
-1.  **Create a wicked site.**
+1.  **Create a wicked project.**
 
-    I was working at [Wave](https://www.waveapps.com) when I first discovered that web development was really cool! I wanted to learn more about it, so I figured I would build a personal webiste.
+Welcome to the Traduttore website. Traduttore is an invention 
+completed for Group 17's 2022 Mechatronics FYDP. Group 17 consists
+of Alex Barkin, Alex Alexiou, Cam Nelson, and Danial Mohazab. We 
+are excited to bring you this project and help ASL users in the
+process.
 
-2.  **Learn, Learn, Learn!**
+2.  **Solve a problem!**
 
-    I decided to use Gatsby to help with the start up, and learn more about React. I used a bunch of components from [Reactstrap](https://reactstrap.github.io/), a library for react components that use Bootstrap for styling. I chose reactstrap since it was leading edge, and felt I could learn a lot from using their library. I also wanted to learn more about tooling. I set up tools like CircleCI, CodeCov, and Jest to make sure my website is always up to spec!
+Many people take for granted how easy it is to communicate and interact 
+with people in their everyday lives, especially in service environments. 
+For example, walking into a Starbucks and ordering your favourite drink 
+from the menu is something that comes very easily for people. For others, 
+the conversation that comes with interacting in service environments is much 
+more difficult. People who use ASL as their main form of communication 
+experience a disconnect in these very situations; it is rare to encounter 
+someone who knows ASL in an everyday service environment like a Starbucks 
+who they can freely communicate with. This often comes with needing additional 
+steps such as writing things down on paper or on a phone in order to communicate 
+back and forth, which is not acceptable with the technologically advanced time we 
+live in. For this reason, there is a need to create a product that bridges this 
+gap in communication between ASL users and everyday service environment workers, 
+which is where Traduttore can come in.
 
-3.  **Be Creative!**
+3.  **The results!**
 
-    Since I was a young Lad, I've loved designing things. This website was super fun to create and make exactly the way I wanted. Everything is straight from my heart ❤️.
+Traduttore is an English-ASL translator specifically designed for service 
+environments that aims to make the experience of communicating between an ASL 
+user and a non-ASL user much easier and efficient. Using gesture recognition, 
+text-to-speech, and speech-to-text technology, Traduttore can make walking into a 
+Starbucks and ordering a drink much easier for ASL speakers that typically experience 
+a gap in communication ❤️.
 
-## 🧐 What's inside?
-
-Here's a look at the code layout, focusing on the aspects which I wrote.
-
-    .
-    ├── _src
-    |   ├── components
-    |   ├── images
-    |   ├── markdown-pages
-    |   ├── pages
-    |   ├── styles
-    |   └── templates
-    ├── _static
-    |   └── trad-icon.svg
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    └── README.md
-
-1.  **`/src`**: This is the folder where all the source code for the project lives. This is likely the folder you'll want to check out!
-
-    1. **`/components`**: This is where I define all the components I use throughout the site!
-    2. **`/images`**: Here lies the images used throughout the site. They're constantly being updated to add more.
-    3. **`/markdown-pages`**: One benefit of [Gatsby](https://www.gatsbyjs.org) is it allows you to render markdown files as html, to look at how check out the `/templates` folder.
-    4. **`/pages`**: Here is the main folder which holds all the pages which get rendered on the site (except for the markdown pages).
-    5. **`/styles`**: All the CSS (thats not from Bootstrap) lives in here.
-    6. **`/templates`**: Here is the aforementioned templates folder where the template for how to render the markdown files lives.
-
-2)  **`/static`**: This folder is where I keep my personal logo/icon!
-
-3)  **`gatsby-config.js`**: This is the configuration file for the Gatsby site. This is where I defined all the plug-ins I needed, as well as the site's metadata.
-
-4)  **`gatsby-node.js`**: This is the file where I specified customization/extension of default Gatsby settings affecting the site's build process.
-
-5)  **`README.md`**: The file you're reading right now! Hopefully enjoying it too.
