@@ -1,6 +1,6 @@
 <p align="center">
   <a href="traduttore.github.io">
-    <img alt="Traduttore" src="./static/trad-icon.svg" width="60" />
+    <img alt="Traduttore" src="./static/trad-icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -11,7 +11,7 @@ Welcome to the code base for traduttore.github.io!
 If you've made it this far, then you're either interested in accessibilty, or grading the website...
 This website was a fun project that is always being updated.
 
-## 🚀 The Goal
+## 🚀 The Project
 
 1.  **Create a wicked project.**
 
